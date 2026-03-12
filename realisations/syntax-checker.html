@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syntax Checker — Lydia ALIK</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="../index.html">Lydia <span>ALIK</span></a>
+    <ul class="nav-links">
+      <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+      <li class="nav-item"><a class="nav-link" href="../presentation.html">Présentation</a></li>
+      <li class="nav-item">
+        <a class="nav-link has-dropdown" href="../competences.html">Compétences</a>
+        <div class="dropdown">
+          <div class="dropdown-section">Vue d'ensemble</div>
+          <a href="../competences.html">Toutes les compétences</a>
+          <div class="dropdown-section">Techniques</div>
+          <a href="../competences/python.html">Python</a><a href="../competences/java.html">Java</a>
+          <a href="../competences/git.html">Git</a><a href="../competences/bases-de-donnees.html">Gestion de BDD</a>
+          <div class="dropdown-section">Humaines</div>
+          <a href="../competences/communication-orale.html">Communication orale</a>
+          <a href="../competences/travail-equipe.html">Travail en équipe</a>
+          <a href="../competences/perseverance.html">Persévérance</a>
+          <a href="../competences/acceptation-feedback.html">Acceptation de feedback</a>
+          <a href="../competences/organisation.html">Organisation</a>
+          <a href="../competences/adaptabilite.html">Adaptabilité</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link has-dropdown active" href="../realisations.html">Réalisations</a>
+        <div class="dropdown">
+          <div class="dropdown-section">Vue d'ensemble</div>
+          <a href="../realisations.html">Toutes les réalisations</a>
+          <div class="dropdown-section">Projets</div>
+          <a href="analyse-logs.html">Outil d'analyse de logs</a>
+          <a href="syntax-checker.html">Syntax Checker</a>
+          <a href="simulation-processus.html">Simulation de procédés</a>
+          <a href="application-mobile.html">Application mobile colis</a>
+          <a href="reservation-avion.html">Site de réservation</a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="../parcours.html">Parcours</a></li>
+      <li class="nav-item"><a class="nav-link nav-contact-btn" href="../contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="../index.html">Accueil</a><a href="../presentation.html">Présentation</a>
+  <a href="../competences.html">Compétences</a><a href="../realisations.html">Réalisations</a>
+  <a href="../parcours.html">Parcours</a><a href="../contact.html">Contact</a>
+</div>
+
+<div class="page-content">
+  <div class="page-hero" style="background: linear-gradient(135deg, #D1FAE5, #F9FAFB);">
+    <div class="container">
+      <div class="page-hero-breadcrumb"><a href="../index.html">Accueil</a> › <a href="../realisations.html">Réalisations</a> › Syntax Checker</div>
+      <div class="page-hero-tag" style="background:var(--accent-light); color:#92400E;">Réalisation 02 — Alternance Alstom</div>
+      <h1>🔍 Syntax Checker</h1>
+      <p class="page-hero-sub">Outil automatisant la compatibilité au format interne des fichiers XML destinés aux systèmes embarqués des trains, intégré dans le pipeline de compilation et réduisant les erreurs en production.</p>
+      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:16px;">
+        <span class="tag tech">Python</span><span class="tag tech">lxml</span>
+        <span class="tag tech">Pandas</span><span class="tag tech">JSON</span><span class="tag">Alstom</span>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Présentation</h2>
+            <p>Le développement du logiciel Syntax Checker a été une étape essentielle de mon expérience en alternance chez Alstom, à la fois sur le plan technique et humain. Il m'a permis de prouver ma capacité à traiter une problématique métier concrète, à proposer une solution automatisée solide, et à la faire évoluer en collaboration avec d'autres parties prenantes. Je suis très fier du fait que l'outil est intégré dans le processus de compilation et validation des fichiers intégrés aux systèmes embarqués sur les trains, réduisant les erreurs en production et améliorant le travail des équipes. Cette expérience a renforcé mes compétences en développement Python, mais aussi en écoute, en rigueur documentaire, et en adaptation à des règles métier complexes.</p>
+            <p>Dans le cadre de mon alternance chez Alstom, j'ai été chargé de concevoir un outil interne appelé Syntax Checker, destiné à automatiser la vérification de la syntaxe des fichiers XML. Ces fichiers, générés par l'équipe de designers à laquelle j'appartiens, contiennent la définition d'un ensemble de données et d'équations destinées à être transformés en binaires qui seront intégrés sur les systèmes embarqués dans les trains. Une erreur dans ces fichiers peut causer des dysfonctionnements et des retards dans les phases de test embarqué.</p>
+          </div>
+
+          <div class="article-section fade-in fade-in-delay-1">
+            <h2 class="article-section-title">Objectifs</h2>
+            <p>L'objectif principal du projet était de détecter automatiquement toutes les incohérences liées au format interne utilisé par l'entreprise. En effet, les fichiers XML produits par l'équipe de designers suivent des règles métier strictes et une structure spécifique, qui doivent être parfaitement respectées pour permettre la génération correcte des binaires embarqués. Le but du Syntax Checker était donc d'identifier dès les premières étapes toute anomalie, qu'il s'agisse d'un non-respect des règles métier, d'une incohérence structurelle ou d'un élément mal défini, afin d'éviter que ces erreurs ne se propagent dans le processus de génération et ne provoquent des retards en test embarqué.</p>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Contexte</h2>
+            <p>Le projet s'inscrit dans un contexte industriel exigeant, où les fichiers XML servent de base à la génération des fichiers binaires intégrés dans les systèmes embarqués des trains. Avant le développement du Syntax Checker, la validation était réalisée manuellement, souvent par les membres de l'équipe eux-mêmes. Les fichiers étaient parfois volumineux, complexes et produits dans des délais courts, augmentant les risques d'erreurs humaines. Les erreurs non détectées tôt dans le processus pouvaient propager des défauts jusqu'aux phases de test embarqué, générant des retards, des coûts supplémentaires, une perte de temps pour les équipes de validation. Le besoin d'un outil automatisé était donc devenu urgent pour sécuriser la production, gagner du temps et fiabiliser les livraisons.</p>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Enjeux</h2>
+            <ul>
+              <li>Pour les designers : gagner en efficacité en supprimant des vérifications manuelles longues, fastidieuses et parfois sources d'erreurs, tout en réduisant les retours tardifs en phase de test embarqué</li>
+              <li>Pour moi : transformer un besoin métier en un outil concret, fiable et directement utile au quotidien, monter en autonomie en prenant en charge l'analyse, le développement, la documentation et la livraison</li>
+              <li>Assimiler des règles métier complexes ou implicites et les traduire en règles techniques formalisées</li>
+              <li>Produire une solution durable, capable de s'intégrer dans un pipeline interne sans nécessiter de lourdes modifications à l'avenir</li>
+            </ul>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Risques</h2>
+            <ul>
+              <li>Sur le plan technique : la capacité à couvrir l'ensemble des règles métier, parfois nombreuses, évolutives et difficiles à formaliser ; éviter de produire un outil trop rigide susceptible de devenir rapidement obsolète ; garantir la maintenabilité du code</li>
+              <li>Sur le plan humain et organisationnel : créer une solution trop technique pour les utilisateurs, compromettant son adoption ; le manque éventuel de retours ou de disponibilité des équipes pouvant entraîner un décalage entre les fonctionnalités développées et les besoins réels</li>
+            </ul>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Étapes du projet</h2>
+            <div style="display:flex; flex-direction:column; gap:16px;">
+              <div style="display:flex; gap:16px; align-items:flex-start;">
+                <div style="width:32px; height:32px; background:#10B981; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">1</div>
+                <div><h4 style="color:var(--text); margin-bottom:6px;">Analyse du besoin</h4><p style="font-size:0.9rem;">Pour commencer j'ai fait plusieurs réunions avec les membres de mon équipe pour d'abord bien comprendre ce qui était attendu, ensuite pour connaître les erreurs récurrentes et identifier, tous ensemble, les règles de structuration à appliquer, et les vérifications que l'outil devait faire.</p></div>
+              </div>
+              <div style="display:flex; gap:16px; align-items:flex-start;">
+                <div style="width:32px; height:32px; background:#10B981; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">2</div>
+                <div><h4 style="color:var(--text); margin-bottom:6px;">Développement de la première version</h4><p style="font-size:0.9rem;">J'ai développé la première version en Python, en m'appuyant sur les bibliothèques lxml pour le parsing XML et Pandas pour le traitement des données associées. Afin de rendre l'outil flexible et facilement maintenable, j'ai défini les règles de validation dans des fichiers JSON structurés. Ces fichiers contenaient à la fois les règles métier spécifiques et des informations sur la structure attendue des données, ce qui facilitait les vérifications automatiques tout en rendant l'ajout ou la modification des règles accessible sans modifier le code. J'ai également mis en place un système de journalisation détaillée et des rapports lisibles, permettant aux utilisateurs d'identifier rapidement les erreurs et de comprendre les écarts entre les fichiers XML et les règles métier définies.</p></div>
+              </div>
+              <div style="display:flex; gap:16px; align-items:flex-start;">
+                <div style="width:32px; height:32px; background:#10B981; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">3</div>
+                <div><h4 style="color:var(--text); margin-bottom:6px;">Documentation</h4><p style="font-size:0.9rem;">J'ai documenté l'ensemble du code pour en faciliter la compréhension et l'évolutivité, et j'ai rédigé un manuel utilisateur clair et structuré afin de permettre une prise en main rapide par l'équipe. En parallèle, j'ai mis à jour le cahier des charges de manière itérative, en l'enrichissant au fur et à mesure que l'équipe exprimait de nouveaux besoins ou proposait des règles supplémentaires à intégrer. Cette démarche m'a permis d'assurer une bonne traçabilité des exigences et de garantir que l'outil reste aligné avec les attentes métier.</p></div>
+              </div>
+              <div style="display:flex; gap:16px; align-items:flex-start;">
+                <div style="width:32px; height:32px; background:#10B981; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">4</div>
+                <div><h4 style="color:var(--text); margin-bottom:6px;">Tests et intégration</h4><p style="font-size:0.9rem;">Pour garantir la fiabilité de l'outil, j'ai mis en place un processus de livraisons régulières à l'équipe, accompagné de versions opérationnelles testées. J'ai moi-même réalisé des tests fonctionnels approfondis afin de m'assurer que les règles définies étaient correctement appliquées, que les erreurs étaient bien détectées et que les rapports générés étaient lisibles et pertinents. Cette approche itérative m'a permis d'identifier rapidement les éventuelles anomalies, d'apporter les ajustements nécessaires et d'assurer une intégration fluide dans le flux de travail existant.</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Acteurs</h2>
+            <ul>
+              <li><strong>Moi-même :</strong> j'ai joué un rôle central dans le projet, en prenant en charge l'ensemble du cycle de développement du Syntax Checker. Cela inclut l'analyse du besoin, la conception technique, le développement de l'outil, la création et la structuration des règles de validation, ainsi que la mise en place des tests. J'ai également assuré la rédaction de toute la documentation technique et utilisateur. En parallèle, j'ai servi de point de contact technique pour l'équipe, en recueillant les retours, en clarifiant les règles métier et en assurant la coordination nécessaire.</li>
+              <li><strong>L'équipe métier (designers) :</strong> elle a joué un rôle essentiel dans la définition des règles et la validation fonctionnelle de l'outil. Elle m'a fourni des fichiers XML représentatifs, des exemples concrets d'erreurs rencontrées et des explications détaillées sur les règles métier parfois implicites ou complexes.</li>
+              <li><strong>Le manager :</strong> il a assuré un rôle d'accompagnement et de supervision tout au long du projet. Il m'a aidé à structurer la démarche, à clarifier les priorités et à définir une roadmap réaliste. Il a également validé les différentes versions livrées.</li>
+            </ul>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Résultats</h2>
+            <div class="highlight-box success">
+              <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin-bottom:10px;">Pour l'équipe</h4>
+              <p>Les résultats ont été une réduction significative des erreurs, un gain de temps dans la vérification des fichiers XML.</p>
+            </div>
+            <div class="highlight-box" style="margin-top:16px;">
+              <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin-bottom:10px;">Pour moi</h4>
+              <p>Ce projet a été très enrichissant pour moi, tant sur le plan technique qu'humain. Il m'a permis d'améliorer mes compétences en Python. En outre, j'ai pu développer ma capacité à comprendre des besoins métier parfois implicites, à être à l'écoute et à ajuster la solution en continu en fonction des retours de l'équipe. J'ai également renforcé mon autonomie en prenant en charge toutes les étapes du projet : la conception, le développement, la documentation, les tests, l'intégration et la livraison.</p>
+            </div>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Lendemains du projet</h2>
+            <ul>
+              <li><strong>Immédiatement après :</strong> outil utilisé quotidiennement par l'équipe de designers pour la validation des fichiers de Datas créés</li>
+              <li><strong>À moyen terme :</strong> intégration automatique dans l'outil de compilation et de validation des Datas</li>
+              <li><strong>Aujourd'hui :</strong> prise de conscience de l'impact que peut avoir un outil bien conçu dans un contexte industriel exigeant</li>
+            </ul>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Mon regard critique</h2>
+            <p>Ce projet m'a permis de réaliser l'importance d'avoir une communication claire entre les équipes techniques et fonctionnelles. Ma contribution ne se limitait pas seulement à la programmation, mais aussi à traduire les besoins métier en outils concrets, compréhensibles et utiles. Je suis également fière d'avoir anticipé les besoins à venir en créant une base modulable et bien documentée pour faciliter les évolutions.</p>
+            <p>En somme, ce projet m'a conforté dans mon intérêt pour le développement d'applications et l'automatisation, tout en mettant en avant mes compétences analytiques, ma rigueur et ma capacité à rendre des outils techniques accessibles à tous les utilisateurs.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="sidebar-card fade-in">
+            <div class="sidebar-card-title">Compétences associées</div>
+            <div class="sidebar-links">
+              <a href="../competences/python.html" class="sidebar-link"><span>🐍</span> Python</a>
+              <a href="../competences/organisation.html" class="sidebar-link"><span>📋</span> Organisation</a>
+              <a href="../competences/travail-equipe.html" class="sidebar-link"><span>👥</span> Travail en équipe</a>
+              <a href="../competences/acceptation-feedback.html" class="sidebar-link"><span>🔄</span> Acceptation de feedback</a>
+              <a href="../competences/communication-orale.html" class="sidebar-link"><span>🗣️</span> Communication orale</a>
+            </div>
+          </div>
+          <div class="sidebar-card fade-in fade-in-delay-1" style="margin-top:20px;">
+            <a href="analyse-logs.html" class="btn btn-outline" style="width:100%; justify-content:center; margin-bottom:10px;">← Outil d'analyse de logs</a>
+            <a href="simulation-processus.html" class="btn btn-primary" style="width:100%; justify-content:center;">Simulation de procédés →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">Lydia <span>ALIK</span></div>
+      <p class="footer-text">Experte en ingénierie logicielle — Portfolio professionnel</p>
+      <div class="footer-links">
+        <a href="../index.html">Accueil</a><a href="../presentation.html">Présentation</a>
+        <a href="../competences.html">Compétences</a><a href="../realisations.html">Réalisations</a>
+        <a href="../parcours.html">Parcours</a><a href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

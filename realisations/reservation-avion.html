@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site de réservation — Lydia ALIK</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="../index.html">Lydia <span>ALIK</span></a>
+    <ul class="nav-links">
+      <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+      <li class="nav-item"><a class="nav-link" href="../presentation.html">Présentation</a></li>
+      <li class="nav-item">
+        <a class="nav-link has-dropdown" href="../competences.html">Compétences</a>
+        <div class="dropdown">
+          <div class="dropdown-section">Vue d'ensemble</div>
+          <a href="../competences.html">Toutes les compétences</a>
+          <div class="dropdown-section">Techniques</div>
+          <a href="../competences/python.html">Python</a><a href="../competences/java.html">Java</a>
+          <a href="../competences/git.html">Git</a><a href="../competences/bases-de-donnees.html">Gestion de BDD</a>
+          <div class="dropdown-section">Humaines</div>
+          <a href="../competences/communication-orale.html">Communication orale</a>
+          <a href="../competences/travail-equipe.html">Travail en équipe</a>
+          <a href="../competences/perseverance.html">Persévérance</a>
+          <a href="../competences/acceptation-feedback.html">Acceptation de feedback</a>
+          <a href="../competences/organisation.html">Organisation</a>
+          <a href="../competences/adaptabilite.html">Adaptabilité</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link has-dropdown active" href="../realisations.html">Réalisations</a>
+        <div class="dropdown">
+          <div class="dropdown-section">Vue d'ensemble</div>
+          <a href="../realisations.html">Toutes les réalisations</a>
+          <div class="dropdown-section">Projets</div>
+          <a href="analyse-logs.html">Outil d'analyse de logs</a>
+          <a href="syntax-checker.html">Syntax Checker</a>
+          <a href="simulation-processus.html">Simulation de procédés</a>
+          <a href="application-mobile.html">Application mobile colis</a>
+          <a href="reservation-avion.html">Site de réservation</a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="../parcours.html">Parcours</a></li>
+      <li class="nav-item"><a class="nav-link nav-contact-btn" href="../contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="../index.html">Accueil</a><a href="../presentation.html">Présentation</a>
+  <a href="../competences.html">Compétences</a><a href="../realisations.html">Réalisations</a>
+  <a href="../parcours.html">Parcours</a><a href="../contact.html">Contact</a>
+</div>
+
+<div class="page-content">
+  <div class="page-hero" style="background: linear-gradient(135deg, #EDE9FE, #F9FAFB);">
+    <div class="container">
+      <div class="page-hero-breadcrumb"><a href="../index.html">Accueil</a> › <a href="../realisations.html">Réalisations</a> › Site de réservation</div>
+      <div class="page-hero-tag" style="background:var(--accent-light); color:#92400E;">Réalisation 05 — Projet académique</div>
+      <h1>✈️ Site de réservation de billets d'avion</h1>
+      <p class="page-hero-sub">Plateforme web complète développée avec Spring Boot, React et PostgreSQL, une application full-stack moderne simulant un vrai service de réservation de billets d'avion.</p>
+      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:16px;">
+        <span class="tag tech">Spring Boot</span><span class="tag tech">React</span>
+        <span class="tag tech">PostgreSQL</span><span class="tag tech">API REST</span><span class="tag tech">Git</span>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Présentation</h2>
+            <p>Dans le cadre d'un projet d'école réalisé en binôme, j'ai participé au développement d'une plateforme web de réservation de billets d'avion. L'objectif était de concevoir une application complète permettant aux utilisateurs de consulter des vols, rechercher des destinations, créer un compte, effectuer des réservations et gérer leurs informations.</p>
+            <p>Le projet reposait sur une architecture moderne utilisant Java Spring Boot pour le backend, React pour le frontend, et une base de données relationnelle PostgreSQL pour la gestion des informations (utilisateurs, vols, réservations…). Ce projet avait pour vocation de simuler un service complet comparable à une plateforme de réservation réelle, tout en respectant des contraintes de cohérence, de sécurité et de fluidité d'expérience utilisateur.</p>
+          </div>
+
+          <div class="article-section fade-in fade-in-delay-1">
+            <h2 class="article-section-title">Objectifs</h2>
+            <ul>
+              <li>Concevoir une plateforme ergonomique permettant aux utilisateurs de consulter facilement les vols disponibles et d'effectuer leurs réservations</li>
+              <li>Mettre en place une architecture fiable reposant sur une séparation claire entre le front-end et le back-end, afin d'assurer la maintenabilité et l'évolution future de l'application</li>
+              <li>Gérer l'ensemble du cycle utilisateur : création de compte, authentification, recherche de vols, sélection et validation de la réservation</li>
+              <li>Garantir l'intégrité et la cohérence des données stockées dans la base PostgreSQL, notamment pour éviter les incohérences dans la gestion des réservations et des disponibilités</li>
+            </ul>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Contexte</h2>
+            <p>Projet réalisé dans un cadre académique avec un enseignant pour le suivi et une échéance fixe. Nous devions démontrer la maîtrise d'un stack technique complet : Spring Boot, React, API REST, gestion d'une base relationnelle et intégration de toutes les couches.</p>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Enjeux</h2>
+            <ul>
+              <li>Concevoir un modèle de données cohérent, capable de gérer un volume potentiellement important d'informations liées aux vols, aux utilisateurs et aux réservations, sans risque d'incohérence</li>
+              <li>La mise en place d'une API REST fiable et sécurisée, garantissant des échanges fluides et robustes entre le front-end React et le back-end Spring Boot</li>
+              <li>Offrir une expérience utilisateur simple, intuitive et agréable, afin de permettre à chacun de rechercher un vol, de consulter les informations essentielles et de finaliser une réservation sans friction</li>
+            </ul>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Risques</h2>
+            <ul>
+              <li>Pour le projet : difficultés d'intégration entre les différentes couches, incohérences dans le modèle de données, retards cumulés en cas de mauvaise organisation</li>
+              <li>Pour notre binôme : nécessité de répartir les tâches efficacement, risque de surcharge si un membre avance moins vite, gestion du temps imposée par l'école</li>
+            </ul>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Étapes du projet</h2>
+            <div style="display:flex; flex-direction:column; gap:16px;">
+              <div style="display:flex; gap:16px;">
+                <div style="width:32px; height:32px; background:#8B5CF6; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">1</div>
+                <div><h4 style="color:var(--text); margin-bottom:6px;">Spécification fonctionnelle</h4><p style="font-size:0.9rem;">Nous avons commencé par une spécification fonctionnelle, listant les pages nécessaires, les fonctionnalités prioritaires, et les interactions entre les utilisateurs et le système. Une première version du schéma de base de données a été conçue pour représenter les vols, les compagnies, les utilisateurs, les réservations et les relations entre ces entités.</p></div>
+              </div>
+              <div style="display:flex; gap:16px;">
+                <div style="width:32px; height:32px; background:#8B5CF6; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">2</div>
+                <div><h4 style="color:var(--text); margin-bottom:6px;">Développement backend (Spring Boot)</h4><p style="font-size:0.9rem;">Une fois la structure validée, nous avons développé le backend en Java Spring Boot, avec mise en place des entités, des endpoints REST, de la gestion de la sécurité, et des opérations CRUD.</p></div>
+              </div>
+              <div style="display:flex; gap:16px;">
+                <div style="width:32px; height:32px; background:#8B5CF6; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">3</div>
+                <div><h4 style="color:var(--text); margin-bottom:6px;">Développement frontend (React)</h4><p style="font-size:0.9rem;">En parallèle, nous construisions l'interface frontend en React, tout en assurant le lien avec l'API via des appels HTTP.</p></div>
+              </div>
+              <div style="display:flex; gap:16px;">
+                <div style="width:32px; height:32px; background:#8B5CF6; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">4</div>
+                <div><h4 style="color:var(--text); margin-bottom:6px;">Intégration et tests</h4><p style="font-size:0.9rem;">Nous avons ensuite procédé à l'intégration complète du système : tests d'affichage de vols réels depuis la base PostgreSQL, création de comptes et réservations, vérification de la cohérence des données. Enfin, une phase de tests et de validation a permis de vérifier la sécurité, les règles métiers (impossibilité de réserver deux fois la même place, cohérence des dates…), et la bonne communication entre les différentes couches. La documentation a été rédigée pour présenter l'architecture, le modèle de données, les fonctionnalités et les choix techniques.</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Acteurs</h2>
+            <ul>
+              <li><strong>Mon binôme et moi :</strong> nous avons travaillé ensemble pour répartir efficacement les tâches entre frontend, backend et gestion de la base, tout en maintenant une communication fluide</li>
+              <li><strong>L'encadrant :</strong> nous guidait lors des points hebdomadaires, validait nos choix techniques et nous aidait à rediriger nos efforts lorsque certaines pistes étaient trop complexes ou trop longues à implémenter</li>
+            </ul>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Résultats</h2>
+            <div class="highlight-box success">
+              <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin-bottom:10px;">Pour le projet</h4>
+              <p>Pour le projet, nous avons livré une application fonctionnelle, stable et cohérente, répondant aux principales attentes : consultation de vols, création de comptes, réservations et gestion des données. Ce projet a permis de valider l'ensemble des compétences attendues dans notre cursus.</p>
+            </div>
+            <div class="highlight-box" style="margin-top:16px;">
+              <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin-bottom:10px;">Pour moi</h4>
+              <p>Pour moi, cette réalisation a été l'occasion de renforcer mes compétences en Spring Boot, React, PostgreSQL, API REST, modélisation de données, ainsi qu'en gestion de projet en binôme. J'ai également développé une bonne compréhension des enjeux liés à la cohérence des données et au fonctionnement des applications complètes modernes.</p>
+            </div>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Lendemains du projet</h2>
+            <ul>
+              <li><strong>Futur immédiat :</strong> utiliser ce projet comme référence pour structurer d'autres applications en architecture front / back séparée. Intégrer les bonnes pratiques acquises (authentification, API, gestion d'erreurs).</li>
+              <li><strong>À moyen terme :</strong> améliorer mes compétences sur des sujets avancés comme l'optimisation SQL, la montée en charge, les systèmes distribués, ou encore le déploiement de plateformes complètes (CI/CD, conteneurisation…)</li>
+              <li><strong>Aujourd'hui :</strong> ce projet constitue une base solide pour mes projets actuels et futurs. Il illustre ma capacité à concevoir une application web complète, à interconnecter plusieurs technologies modernes et à gérer efficacement un projet de développement logiciel.</li>
+            </ul>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Mon regard critique</h2>
+            <p>Ce projet a été particulièrement formateur. Il m'a permis de prendre du recul sur l'importance de la structuration des données et de l'architecture logique entre les couches système. Ma valeur ajoutée a résidé dans ma capacité à structurer le modèle de données, à assurer l'intégration entre backend et frontend, et à maintenir une organisation stable pour garantir l'avancement du projet.</p>
+            <p>Les principaux enseignements que j'en retiens sont : l'importance d'une modélisation claire, la nécessité de tester en continu, et le rôle fondamental de la communication au sein d'un binôme pour garantir une cohérence globale.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="sidebar-card fade-in">
+            <div class="sidebar-card-title">Compétences associées</div>
+            <div class="sidebar-links">
+              <a href="../competences/java.html" class="sidebar-link"><span>☕</span> Java (Spring Boot)</a>
+              <a href="../competences/bases-de-donnees.html" class="sidebar-link"><span>🗄️</span> Gestion de BDD</a>
+              <a href="../competences/git.html" class="sidebar-link"><span>🔀</span> Git</a>
+              <a href="../competences/organisation.html" class="sidebar-link"><span>📋</span> Organisation</a>
+              <a href="../competences/travail-equipe.html" class="sidebar-link"><span>👥</span> Travail en équipe</a>
+            </div>
+          </div>
+          <div class="sidebar-card fade-in fade-in-delay-1" style="margin-top:20px;">
+            <a href="application-mobile.html" class="btn btn-outline" style="width:100%; justify-content:center; margin-bottom:10px;">← Application mobile</a>
+            <a href="../realisations.html" class="btn btn-primary" style="width:100%; justify-content:center;">Toutes les réalisations ↑</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">Lydia <span>ALIK</span></div>
+      <p class="footer-text">Experte en ingénierie logicielle — Portfolio professionnel</p>
+      <div class="footer-links">
+        <a href="../index.html">Accueil</a><a href="../presentation.html">Présentation</a>
+        <a href="../competences.html">Compétences</a><a href="../realisations.html">Réalisations</a>
+        <a href="../parcours.html">Parcours</a><a href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

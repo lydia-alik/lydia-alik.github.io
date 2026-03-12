@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulation de procédés — Lydia ALIK</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="../index.html">Lydia <span>ALIK</span></a>
+    <ul class="nav-links">
+      <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+      <li class="nav-item"><a class="nav-link" href="../presentation.html">Présentation</a></li>
+      <li class="nav-item">
+        <a class="nav-link has-dropdown" href="../competences.html">Compétences</a>
+        <div class="dropdown">
+          <div class="dropdown-section">Vue d'ensemble</div>
+          <a href="../competences.html">Toutes les compétences</a>
+          <div class="dropdown-section">Techniques</div>
+          <a href="../competences/python.html">Python</a><a href="../competences/java.html">Java</a>
+          <a href="../competences/git.html">Git</a><a href="../competences/bases-de-donnees.html">Gestion de BDD</a>
+          <div class="dropdown-section">Humaines</div>
+          <a href="../competences/communication-orale.html">Communication orale</a>
+          <a href="../competences/travail-equipe.html">Travail en équipe</a>
+          <a href="../competences/perseverance.html">Persévérance</a>
+          <a href="../competences/acceptation-feedback.html">Acceptation de feedback</a>
+          <a href="../competences/organisation.html">Organisation</a>
+          <a href="../competences/adaptabilite.html">Adaptabilité</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link has-dropdown active" href="../realisations.html">Réalisations</a>
+        <div class="dropdown">
+          <div class="dropdown-section">Vue d'ensemble</div>
+          <a href="../realisations.html">Toutes les réalisations</a>
+          <div class="dropdown-section">Projets</div>
+          <a href="analyse-logs.html">Outil d'analyse de logs</a>
+          <a href="syntax-checker.html">Syntax Checker</a>
+          <a href="simulation-processus.html">Simulation de procédés</a>
+          <a href="application-mobile.html">Application mobile colis</a>
+          <a href="reservation-avion.html">Site de réservation</a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="../parcours.html">Parcours</a></li>
+      <li class="nav-item"><a class="nav-link nav-contact-btn" href="../contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="../index.html">Accueil</a><a href="../presentation.html">Présentation</a>
+  <a href="../competences.html">Compétences</a><a href="../realisations.html">Réalisations</a>
+  <a href="../parcours.html">Parcours</a><a href="../contact.html">Contact</a>
+</div>
+
+<div class="page-content">
+  <div class="page-hero" style="background: linear-gradient(135deg, #FEF3C7, #F9FAFB);">
+    <div class="container">
+      <div class="page-hero-breadcrumb"><a href="../index.html">Accueil</a> › <a href="../realisations.html">Réalisations</a> › Simulation de procédés</div>
+      <div class="page-hero-tag" style="background:var(--accent-light); color:#92400E;">Réalisation 03 — Projet de fin d'études Master</div>
+      <h1>⚙️ Simulation d'exécution de procédés logiciels</h1>
+      <p class="page-hero-sub">Développement d'un module Java de simulation dynamique de l'exécution de modèles de procédés logiciels, avec multithreading.</p>
+      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:16px;">
+        <span class="tag tech">Java</span><span class="tag tech">Multithreading</span>
+        <span class="tag tech">Design Patterns</span><span class="tag">Master PFE</span>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Présentation</h2>
+            <p>Dans le cadre de mon projet de fin d'études Master, j'ai participé au développement d'un outil de simulation d'exécution de modèles de procédés logiciels. L'objectif était de permettre la visualisation dynamique du déroulement d'un projet logiciel et la prédiction de son évolution dans le temps : progression des tâches, circulation des livrables, gestion des dépendances et identification anticipée des points de blocage.</p>
+            <p>L'application développée visait à offrir un support décisionnel pour la gestion de projet, tout en posant les premières bases d'une automatisation future des modèles de procédés.</p>
+          </div>
+
+          <div class="article-section fade-in fade-in-delay-1">
+            <h2 class="article-section-title">Objectifs</h2>
+            <ul>
+              <li>Simuler de manière réaliste l'exécution d'un projet logiciel</li>
+              <li>Aider à prévoir les retards potentiels, conflits de ressources ou dépendances critiques</li>
+              <li>Faciliter la planification et la coordination des tâches</li>
+              <li>Préparer le terrain pour une automatisation partielle des modèles étudiés</li>
+            </ul>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Contexte</h2>
+            <p>Ce travail s'inscrivait dans un cadre académique, au sein d'un projet portant sur les modèles de procédés logiciels. Les projets logiciels étant souvent difficiles à prédire et à planifier, cet outil visait à offrir une vision plus fine et dynamique du déroulement d'un processus, au-delà des diagrammes statiques traditionnels.</p>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Enjeux</h2>
+            <ul>
+              <li>Modéliser fidèlement les règles d'exécution d'un procédé logiciel (durées, dépendances, ressources)</li>
+              <li>Simuler plusieurs tâches en parallèle via le multithreading</li>
+              <li>Fournir un support de visualisation intelligible pour les utilisateurs</li>
+              <li>Proposer une base solide pour des travaux futurs sur l'automatisation</li>
+            </ul>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Risques</h2>
+            <ul>
+              <li>Complexité du multithreading, problèmes de synchronisation et réalisme du modèle</li>
+              <li>Montée en compétence rapide nécessaire sur les modèles de procédés</li>
+              <li>Capacité à produire un outil complet dans un temps limité, en binôme</li>
+            </ul>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Étapes du projet</h2>
+            <div style="display:flex; flex-direction:column; gap:16px;">
+              <div style="display:flex; gap:16px; align-items:flex-start;">
+                <div style="width:32px; height:32px; background:#F59E0B; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">1</div>
+                <div><h4 style="color:var(--text); margin-bottom:6px;">Étude du logiciel existant</h4><p style="font-size:0.9rem;">Le logiciel permettant de représenter graphiquement des modèles de procédés existait déjà, et notre objectif était d'y ajouter une couche complète de simulation de l'exécution de ces modèles. La première étape a donc été d'étudier en profondeur l'outil existant : son architecture interne, ses structures de données, son mode de représentation des modèles et les possibilités d'extension. Il a fallu comprendre son organisation, analyser le code existant et identifier les points où un module de simulation pouvait s'intégrer sans perturber le fonctionnement initial. En parallèle, nous avons dû nous familiariser avec plusieurs notions de gestion de projet (durée, dépendances, ordonnancement, allocation des ressources), indispensables pour définir le comportement de la simulation.</p></div>
+              </div>
+              <div style="display:flex; gap:16px; align-items:flex-start;">
+                <div style="width:32px; height:32px; background:#F59E0B; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">2</div>
+                <div><h4 style="color:var(--text); margin-bottom:6px;">Définition des règles de simulation</h4><p style="font-size:0.9rem;">Ensuite, avec ma binôme et notre encadrante, nous avons défini les règles principales qui devaient régir la simulation : gestion des durées des tâches, dépendances, gestion des ressources. Une fois ces règles établies, nous avons conçu l'architecture générale du module, en prévoyant l'utilisation intensive du multithreading afin de simuler l'exécution parallèle de plusieurs tâches comme dans un projet réel. Nous nous sommes appuyées sur des patrons de conception pour structurer correctement le module, améliorer sa lisibilité, sa future maintenance et garantir une communication cohérente entre les threads.</p></div>
+              </div>
+              <div style="display:flex; gap:16px; align-items:flex-start;">
+                <div style="width:32px; height:32px; background:#F59E0B; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">3</div>
+                <div><h4 style="color:var(--text); margin-bottom:6px;">Développement itératif en Java</h4><p style="font-size:0.9rem;">La phase de développement a ensuite commencé de manière progressive, en Java, sous la forme de cycles réguliers conception, implémentation, tests. Cela nous permettait d'ajuster en continu le comportement de la simulation et de corriger les écarts entre les résultats obtenus et les comportements attendus. À certains moments, notre encadrante a dû s'absenter pour raisons de santé, ce qui nous a obligées à nous réorganiser et à adapter notre rythme de travail. J'ai dû prendre davantage d'initiative, assumer une partie de la coordination et maintenir la progression du projet malgré l'incertitude. Cette situation m'a demandé une forte capacité d'adaptation, de la persévérance et une réelle autonomie.</p></div>
+              </div>
+              <div style="display:flex; gap:16px; align-items:flex-start;">
+                <div style="width:32px; height:32px; background:#F59E0B; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">4</div>
+                <div><h4 style="color:var(--text); margin-bottom:6px;">Intégration et soutenance</h4><p style="font-size:0.9rem;">Enfin, une fois la couche de simulation réalisée, nous l'avons intégrée entièrement dans le logiciel existant. Le projet s'est conclu par une soutenance devant le jury du master, au cours de laquelle nous avons présenté l'outil, ses apports pour l'analyse et la gestion de projets logiciels, ainsi que les perspectives d'évolution possibles.</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Acteurs</h2>
+            <ul>
+              <li><strong>Mon binôme :</strong> ce projet a été réalisé en binôme, nécessitant une répartition claire des tâches, une communication régulière et une coordination étroite</li>
+              <li><strong>Notre encadrante universitaire :</strong> nous avons échangé fréquemment avec elle pour valider nos orientations techniques, poser des questions sur les modèles de procédés et nous assurer de la pertinence de notre approche</li>
+              <li><strong>Le jury :</strong> la réalisation s'est achevée par une soutenance devant un jury, au cours de laquelle nous avons présenté l'outil, démontré son fonctionnement et répondu aux questions associées</li>
+            </ul>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Résultats</h2>
+            <div class="highlight-box success">
+              <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin-bottom:10px;">Pour l'institution</h4>
+              <p>L'outil final constitue une base exploitable pour d'autres travaux de recherche ou projets académiques. Il permet d'illustrer de manière concrète l'exécution de modèles de procédés et d'expérimenter différents scénarios sans risque pour un projet réel.</p>
+            </div>
+            <div class="highlight-box" style="margin-top:16px;">
+              <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin-bottom:10px;">Pour moi</h4>
+              <p>Ce projet m'a permis de consolider mes compétences en développement Java, en architecture logicielle et en programmation concurrente. Il m'a également appris à travailler efficacement en binôme, à organiser un projet complexe et à tenir des échéances strictes. La soutenance m'a également permis de développer mes compétences en communication technique et vulgarisation.</p>
+            </div>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Lendemains du projet</h2>
+            <ul>
+              <li><strong>Futur immédiat :</strong> l'outil peut être enrichi par une interface utilisateur plus avancée ou par l'intégration de nouvelles règles de simulation pour refléter d'autres modèles de procédés</li>
+              <li><strong>À moyen terme :</strong> il pourrait servir de socle pour développer des mécanismes d'automatisation partielle des tâches ou pour intégrer des algorithmes de prédiction liés au planning et à la gestion des ressources</li>
+              <li><strong>Aujourd'hui :</strong> ce projet reste une référence dans mon parcours, tant pour sa richesse technique que pour le travail collaboratif qu'il a exigé. Il représente également une base solide pour mes futures activités dans le domaine de l'ingénierie logicielle.</li>
+            </ul>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Mon regard critique</h2>
+            <p>Ce projet a été particulièrement formateur car il combinait des défis techniques complexes et un important travail de structuration et de communication. Ma valeur ajoutée s'est exprimée dans ma capacité à comprendre rapidement les concepts liés aux modèles de procédés, à concevoir un module de simulation cohérent et à collaborer efficacement avec mon binôme pour aboutir à un outil fonctionnel.</p>
+            <p>J'ai retenu l'importance d'une architecture claire, de tests fréquents et d'une communication constante pour éviter les incompréhensions techniques. Enfin, cette expérience a renforcé mon intérêt pour les projets mêlant modélisation, planification et développement logiciel, et constitue un jalon important dans mon évolution professionnelle vers des missions techniques plus avancées.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="sidebar-card fade-in">
+            <div class="sidebar-card-title">Compétences associées</div>
+            <div class="sidebar-links">
+              <a href="../competences/java.html" class="sidebar-link"><span>☕</span> Java</a>
+              <a href="../competences/travail-equipe.html" class="sidebar-link"><span>👥</span> Travail en équipe</a>
+              <a href="../competences/perseverance.html" class="sidebar-link"><span>💪</span> Persévérance</a>
+              <a href="../competences/adaptabilite.html" class="sidebar-link"><span>🌊</span> Adaptabilité</a>
+              <a href="../competences/communication-orale.html" class="sidebar-link"><span>🗣️</span> Communication orale</a>
+            </div>
+          </div>
+          <div class="sidebar-card fade-in fade-in-delay-1" style="margin-top:20px;">
+            <a href="syntax-checker.html" class="btn btn-outline" style="width:100%; justify-content:center; margin-bottom:10px;">← Syntax Checker</a>
+            <a href="application-mobile.html" class="btn btn-primary" style="width:100%; justify-content:center;">Application mobile →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">Lydia <span>ALIK</span></div>
+      <p class="footer-text">Experte en ingénierie logicielle — Portfolio professionnel</p>
+      <div class="footer-links">
+        <a href="../index.html">Accueil</a><a href="../presentation.html">Présentation</a>
+        <a href="../competences.html">Compétences</a><a href="../realisations.html">Réalisations</a>
+        <a href="../parcours.html">Parcours</a><a href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
