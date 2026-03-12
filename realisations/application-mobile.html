@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application mobile colis — Lydia ALIK</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="../index.html">Lydia <span>ALIK</span></a>
+    <ul class="nav-links">
+      <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+      <li class="nav-item"><a class="nav-link" href="../presentation.html">Présentation</a></li>
+      <li class="nav-item">
+        <a class="nav-link has-dropdown" href="../competences.html">Compétences</a>
+        <div class="dropdown">
+          <div class="dropdown-section">Vue d'ensemble</div>
+          <a href="../competences.html">Toutes les compétences</a>
+          <div class="dropdown-section">Techniques</div>
+          <a href="../competences/python.html">Python</a><a href="../competences/java.html">Java</a>
+          <a href="../competences/git.html">Git</a><a href="../competences/bases-de-donnees.html">Gestion de BDD</a>
+          <div class="dropdown-section">Humaines</div>
+          <a href="../competences/communication-orale.html">Communication orale</a>
+          <a href="../competences/travail-equipe.html">Travail en équipe</a>
+          <a href="../competences/perseverance.html">Persévérance</a>
+          <a href="../competences/acceptation-feedback.html">Acceptation de feedback</a>
+          <a href="../competences/organisation.html">Organisation</a>
+          <a href="../competences/adaptabilite.html">Adaptabilité</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link has-dropdown active" href="../realisations.html">Réalisations</a>
+        <div class="dropdown">
+          <div class="dropdown-section">Vue d'ensemble</div>
+          <a href="../realisations.html">Toutes les réalisations</a>
+          <div class="dropdown-section">Projets</div>
+          <a href="analyse-logs.html">Outil d'analyse de logs</a>
+          <a href="syntax-checker.html">Syntax Checker</a>
+          <a href="simulation-processus.html">Simulation de procédés</a>
+          <a href="application-mobile.html">Application mobile colis</a>
+          <a href="reservation-avion.html">Site de réservation</a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="../parcours.html">Parcours</a></li>
+      <li class="nav-item"><a class="nav-link nav-contact-btn" href="../contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="../index.html">Accueil</a><a href="../presentation.html">Présentation</a>
+  <a href="../competences.html">Compétences</a><a href="../realisations.html">Réalisations</a>
+  <a href="../parcours.html">Parcours</a><a href="../contact.html">Contact</a>
+</div>
+
+<div class="page-content">
+  <div class="page-hero" style="background: linear-gradient(135deg, #FCE7F3, #F9FAFB);">
+    <div class="container">
+      <div class="page-hero-breadcrumb"><a href="../index.html">Accueil</a> › <a href="../realisations.html">Réalisations</a> › Application mobile</div>
+      <div class="page-hero-tag" style="background:var(--accent-light); color:#92400E;">Réalisation 04 — Projet de fin d'études Licence</div>
+      <h1>📦 Application mobile d'envoi de colis</h1>
+      <p class="page-hero-sub">Application Android inspirée du covoiturage, permettant l'envoi de colis entre particuliers.</p>
+      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:16px;">
+        <span class="tag tech">Java</span><span class="tag tech">Android Studio</span>
+        <span class="tag tech">MariaDB</span><span class="tag">Licence PFE</span>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Présentation</h2>
+            <p>Dans le cadre de mon projet de fin d'études en Licence Informatique, j'ai développé une application mobile permettant l'envoi de colis entre particuliers. Inspirée du principe du covoiturage, l'application permettait à un utilisateur effectuant un trajet d'emporter le colis d'un autre utilisateur, afin d'offrir une alternative plus flexible, rapide et économique aux services postaux traditionnels. Le développement s'est fait en Java sous Android Studio, avec une base de données MariaDB pour gérer les comptes utilisateurs, les trajets, les annonces et les interactions.</p>
+          </div>
+
+          <div class="article-section fade-in fade-in-delay-1">
+            <h2 class="article-section-title">Objectifs</h2>
+            <p>L'objectif principal était de concevoir une application complète couvrant l'ensemble du processus : création de compte, publication d'offres et de demandes, messagerie interne. Le but était de proposer une solution fluide, ergonomique et fiable, répondant à un besoin concret d'optimisation des trajets existants.</p>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Contexte</h2>
+            <p>Ce projet s'inscrivait dans le cadre de la validation de ma licence en Ingénierie des systèmes d'informations et des logiciels, ça s'est déroulé pendant la période du COVID-19, ce qui a fortement influencé l'organisation : travail à distance, communication réduite, difficultés pour maintenir un rythme commun. Initialement prévu pour un binôme, j'ai finalement poursuivi le projet seule après l'abandon de ma partenaire pour raisons personnelles liées au contexte sanitaire.</p>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Enjeux</h2>
+            <p>Les enjeux du projet étaient multiples : proposer une interface simple et intuitive, garantir la fiabilité et la sécurité des données, et offrir une expérience fluide malgré la diversité des fonctionnalités. Le risque technique résidait dans l'intégration complexe de modules comme la géolocalisation, la messagerie ou la gestion des sessions utilisateur. Pour l'université, l'enjeu était la validation du projet et sa capacité à illustrer nos compétences pratiques.</p>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Risques</h2>
+            <ul>
+              <li>La complexité technique, notamment l'intégration de la géolocalisation et de la messagerie</li>
+              <li>Le risque de non-respect des délais, amplifié par la situation exceptionnelle</li>
+              <li>La nécessité de faire des choix et d'arbitrer entre certaines fonctionnalités secondaires pour garantir une livraison à temps</li>
+            </ul>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Étapes du projet</h2>
+            <div style="display:flex; flex-direction:column; gap:16px;">
+              <div style="display:flex; gap:16px; align-items:flex-start;">
+                <div style="width:32px; height:32px; background:#EC4899; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">1</div>
+                <div><h4 style="color:var(--text); margin-bottom:6px;">Étude de l'existant</h4><p style="font-size:0.9rem;">Analyse des applications similaires, identification des fonctionnalités essentielles, étude des parcours utilisateurs et des pratiques du marché. Rédaction des spécifications fonctionnelles détaillées, définissant les écrans de l'application, les flux métier, les interactions entre utilisateurs, les règles de gestion, ainsi que la structure de la base de données MariaDB.</p></div>
+              </div>
+              <div style="display:flex; gap:16px; align-items:flex-start;">
+                <div style="width:32px; height:32px; background:#EC4899; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">2</div>
+                <div><h4 style="color:var(--text); margin-bottom:6px;">Conception et architecture</h4><p style="font-size:0.9rem;">Organisation du découpage du projet, les classes Java, les interactions réseau, la structure des tables, et les composants Android nécessaires.</p></div>
+              </div>
+              <div style="display:flex; gap:16px; align-items:flex-start;">
+                <div style="width:32px; height:32px; background:#EC4899; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">3</div>
+                <div><h4 style="color:var(--text); margin-bottom:6px;">Développement sous Android Studio</h4><p style="font-size:0.9rem;">Implémentation des interfaces utilisateur, la logique de création et d'authentification des comptes, la gestion des annonces d'envoi et de transport, la communication avec la base de données MariaDB, ainsi que le module de messagerie interne.</p></div>
+              </div>
+              <div style="display:flex; gap:16px; align-items:flex-start;">
+                <div style="width:32px; height:32px; background:#EC4899; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">4</div>
+                <div><h4 style="color:var(--text); margin-bottom:6px;">Réorganisation solo</h4><p style="font-size:0.9rem;">Lorsque ma binôme a dû abandonner le projet, j'ai dû me réorganiser seule, revoir les priorités et adapter la charge de travail. Certaines fonctionnalités non essentielles ont été reportées afin d'assurer une livraison complète et fonctionnelle dans les délais, comme les filtres avancés de recherche ou les mécanismes de notation des utilisateurs.</p></div>
+              </div>
+              <div style="display:flex; gap:16px; align-items:flex-start;">
+                <div style="width:32px; height:32px; background:#EC4899; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">5</div>
+                <div><h4 style="color:var(--text); margin-bottom:6px;">Tests, corrections et rédaction de la documentation</h4><p style="font-size:0.9rem;">Vérification du bon fonctionnement de l'ensemble des fonctionnalités, correction des anomalies et rédaction de la documentation technique du projet.</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Acteurs</h2>
+            <ul>
+              <li><strong>Moi-même :</strong> le projet impliquait initialement un binôme et un encadrant universitaire. Après le départ de ma binôme, mon rôle est devenu central : j'ai assumé seule la responsabilité technique et organisationnelle du projet</li>
+              <li><strong>Mon encadrant :</strong> malgré les difficultés liées au contexte sanitaire, a accompagné l'avancement en validant les choix techniques clés et en apportant des retours réguliers. Les échanges avec lui ont été essentiels pour garder une direction claire et anticiper les risques</li>
+            </ul>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Résultats</h2>
+            <div class="highlight-box success">
+              <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin-bottom:10px;">Pour l'université</h4>
+              <p>Le projet a été mené à son terme. L'université a pu évaluer un projet complet et fonctionnel, démontrant une réelle maîtrise du développement Android et de l'intégration d'une base de données.</p>
+            </div>
+            <div class="highlight-box" style="margin-top:16px;">
+              <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin-bottom:10px;">Pour moi</h4>
+              <p>Pour moi, les résultats ont été très significatifs : développement de compétences avancées en mobile, gestion d'un projet complexe en autonomie, renforcement de mes capacités d'organisation, d'adaptabilité et de persévérance.</p>
+            </div>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Lendemains du projet</h2>
+            <ul>
+              <li><strong>À court terme :</strong> ce projet a validé ma Licence et consolidé mon intérêt pour le développement d'applications mobiles et la gestion de projets</li>
+              <li><strong>À moyen terme :</strong> il a posé les bases de ma manière de travailler : structurer un projet, définir les priorités, arbitrer en situation d'urgence, anticiper les difficultés techniques</li>
+              <li><strong>Aujourd'hui encore :</strong> cette expérience influence ma façon d'aborder les projets professionnels, particulièrement ceux que je mène de manière autonome</li>
+            </ul>
+          </div>
+
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Mon regard critique</h2>
+            <p>Avec le recul, ce projet a été l'une de mes expériences les plus formatrices. Travailler seule sur une application aussi complète m'a appris à être rigoureuse, à prévoir des marges d'erreur, à reconnaître l'importance de la priorisation et à m'adapter rapidement aux imprévus.</p>
+            <p>Ma valeur ajoutée a résidé dans ma capacité à mener le projet jusqu'à la fin, à produire une application cohérente et fonctionnelle malgré les contraintes, et à apprendre de manière accélérée plusieurs aspects du développement mobile. J'en retire des enseignements essentiels : bien définir l'essentiel, savoir renoncer à certaines fonctionnalités pour respecter les délais, communiquer efficacement avec l'encadrant, et maintenir un rythme constant même en situation difficile.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="sidebar-card fade-in">
+            <div class="sidebar-card-title">Compétences associées</div>
+            <div class="sidebar-links">
+              <a href="../competences/java.html" class="sidebar-link"><span>☕</span> Java</a>
+              <a href="../competences/bases-de-donnees.html" class="sidebar-link"><span>🗄️</span> Gestion de BDD</a>
+              <a href="../competences/perseverance.html" class="sidebar-link"><span>💪</span> Persévérance</a>
+              <a href="../competences/adaptabilite.html" class="sidebar-link"><span>🌊</span> Adaptabilité</a>
+              <a href="../competences/organisation.html" class="sidebar-link"><span>📋</span> Organisation</a>
+            </div>
+          </div>
+          <div class="sidebar-card fade-in fade-in-delay-1" style="margin-top:20px;">
+            <a href="simulation-processus.html" class="btn btn-outline" style="width:100%; justify-content:center; margin-bottom:10px;">← Simulation de procédés</a>
+            <a href="reservation-avion.html" class="btn btn-primary" style="width:100%; justify-content:center;">Site de réservation →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">Lydia <span>ALIK</span></div>
+      <p class="footer-text">Experte en ingénierie logicielle — Portfolio professionnel</p>
+      <div class="footer-links">
+        <a href="../index.html">Accueil</a><a href="../presentation.html">Présentation</a>
+        <a href="../competences.html">Compétences</a><a href="../realisations.html">Réalisations</a>
+        <a href="../parcours.html">Parcours</a><a href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

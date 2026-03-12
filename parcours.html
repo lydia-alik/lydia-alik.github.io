@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parcours — Lydia ALIK</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">Lydia <span>ALIK</span></a>
+    <ul class="nav-links">
+      <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+      <li class="nav-item"><a class="nav-link" href="presentation.html">Présentation</a></li>
+      <li class="nav-item">
+        <a class="nav-link has-dropdown" href="competences.html">Compétences</a>
+        <div class="dropdown">
+          <div class="dropdown-section">Vue d'ensemble</div>
+          <a href="competences.html">Toutes les compétences</a>
+          <div class="dropdown-section">Techniques</div>
+          <a href="competences/python.html">Python</a><a href="competences/java.html">Java</a>
+          <a href="competences/git.html">Git</a><a href="competences/bases-de-donnees.html">Gestion de BDD</a>
+          <div class="dropdown-section">Humaines</div>
+          <a href="competences/communication-orale.html">Communication orale</a>
+          <a href="competences/travail-equipe.html">Travail en équipe</a>
+          <a href="competences/perseverance.html">Persévérance</a>
+          <a href="competences/acceptation-feedback.html">Acceptation de feedback</a>
+          <a href="competences/organisation.html">Organisation</a>
+          <a href="competences/adaptabilite.html">Adaptabilité</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link has-dropdown" href="realisations.html">Réalisations</a>
+        <div class="dropdown">
+          <div class="dropdown-section">Vue d'ensemble</div>
+          <a href="realisations.html">Toutes les réalisations</a>
+          <div class="dropdown-section">Projets</div>
+          <a href="realisations/analyse-logs.html">Outil d'analyse de logs</a>
+          <a href="realisations/syntax-checker.html">Syntax Checker</a>
+          <a href="realisations/simulation-processus.html">Simulation de procédés</a>
+          <a href="realisations/application-mobile.html">Application mobile colis</a>
+          <a href="realisations/reservation-avion.html">Site de réservation</a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link active" href="parcours.html">Parcours</a></li>
+      <li class="nav-item"><a class="nav-link nav-contact-btn" href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Accueil</a><a href="presentation.html">Présentation</a>
+  <a href="competences.html">Compétences</a><a href="realisations.html">Réalisations</a>
+  <a href="parcours.html">Parcours</a><a href="contact.html">Contact</a>
+</div>
+
+<div class="page-content">
+  <div class="page-hero">
+    <div class="container">
+      <div class="page-hero-breadcrumb"><a href="index.html">Accueil</a> › Parcours</div>
+      <div class="page-hero-tag">Parcours</div>
+      <h1>Mon <span style="color:var(--primary);">parcours</span></h1>
+      <p class="page-hero-sub">Une frise chronologique de mes expériences professionnelles, formations et projets — présentée en ordre anti-chronologique.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div style="display:flex; gap:40px; align-items:stretch; flex-wrap:wrap;">
+
+        <!-- TIMELINE -->
+        <div style="flex:1; min-width:300px;">
+          <!-- Légende -->
+          <div class="legend fade-in">
+            <div class="legend-item"><div class="legend-dot" style="background:var(--primary);"></div> Expérience professionnelle</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--accent);"></div> Formation</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#10B981;"></div> Certification / Projet majeur</div>
+          </div>
+
+          <div class="timeline">
+
+            <!-- ALTERNANCE ALSTOM -->
+            <div class="timeline-item">
+              <div class="timeline-dot dot-exp"></div>
+              <div class="timeline-content">
+                <span class="timeline-badge badge-exp">Expérience professionnelle</span>
+                <div class="timeline-title">Ingénieure système de pilotage automatique en alternance</div>
+                <div class="timeline-org"><img src="images/logo_alstom.webp" alt="Alstom" style="height:18px; vertical-align:middle; margin-right:8px; border-radius:3px;">Alstom — Saint-Ouen</div>
+                <div class="timeline-period">Septembre 2024 — présent</div>
+                <div class="timeline-desc">Conception et développement d'outils Python internes pour l'analyse de données ferroviaires et la vérification de fichiers de données embarqués. Travail au sein d'une équipe pluridisciplinaire (designers, équipes métier, managers).</div>
+                <button class="timeline-toggle" data-label="Voir les détails →">Voir les détails →</button>
+                <div class="timeline-details">
+                  <h4 style="font-family:var(--font-heading); font-size:0.9rem; font-weight:700; color:var(--text); margin-bottom:10px;">Missions et responsabilités</h4>
+                  <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:6px;">
+                    <li style="font-size:0.875rem; color:var(--text-secondary); padding-left:16px; position:relative;">
+                      <span style="position:absolute; left:0; color:var(--primary);">▸</span>
+                      Développement de l'outil d'analyse de logs (Python, Pandas, Polars) — automatisation d'un processus manuel
+                    </li>
+                    <li style="font-size:0.875rem; color:var(--text-secondary); padding-left:16px; position:relative;">
+                      <span style="position:absolute; left:0; color:var(--primary);">▸</span>
+                      Conception du Syntax Checker (Python, lxml, JSON) — intégré dans le pipeline de compilation
+                    </li>
+                    <li style="font-size:0.875rem; color:var(--text-secondary); padding-left:16px; position:relative;">
+                      <span style="position:absolute; left:0; color:var(--primary);">▸</span>
+                      Communication régulière avec les équipes métier et technique, présentations aux managers
+                    </li>
+                    <li style="font-size:0.875rem; color:var(--text-secondary); padding-left:16px; position:relative;">
+                      <span style="position:absolute; left:0; color:var(--primary);">▸</span>
+                      Utilisation d'Azure DevOps et Git pour le suivi de projet
+                    </li>
+                  </ul>
+                  <h4 style="font-family:var(--font-heading); font-size:0.9rem; font-weight:700; color:var(--text); margin:14px 0 8px;">Compétences mobilisées</h4>
+                  <div class="timeline-comp-links">
+                    <a href="competences/python.html" class="timeline-comp-link">Python</a>
+                    <a href="competences/communication-orale.html" class="timeline-comp-link">Communication orale</a>
+                    <a href="competences/travail-equipe.html" class="timeline-comp-link">Travail en équipe</a>
+                    <a href="competences/adaptabilite.html" class="timeline-comp-link">Adaptabilité</a>
+                    <a href="competences/acceptation-feedback.html" class="timeline-comp-link">Acceptation de feedback</a>
+                    <a href="competences/organisation.html" class="timeline-comp-link">Organisation</a>
+                  </div>
+                  <h4 style="font-family:var(--font-heading); font-size:0.9rem; font-weight:700; color:var(--text); margin:14px 0 8px;">Réalisations associées</h4>
+                  <div class="timeline-comp-links">
+                    <a href="realisations/analyse-logs.html" class="timeline-comp-link" style="background:var(--accent-light); color:#92400E;">📊 Outil d'analyse de logs</a>
+                    <a href="realisations/syntax-checker.html" class="timeline-comp-link" style="background:var(--accent-light); color:#92400E;">🔍 Syntax Checker</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MASTER ESIEA -->
+            <div class="timeline-item">
+              <div class="timeline-dot dot-edu"></div>
+              <div class="timeline-content">
+                <span class="timeline-badge badge-edu">Formation</span>
+                <div class="timeline-title">Master Experte en ingénierie logicielle</div>
+                <div class="timeline-org"><img src="images/logo_esiea.webp" alt="ESIEA" style="height:18px; vertical-align:middle; margin-right:8px; border-radius:3px;">ESIEA — Paris (Bac+5)</div>
+                <div class="timeline-period">2024 — présent (en alternance)</div>
+                <div class="timeline-desc">Formation d'experte en ingénierie logicielle, menée en parallèle de l'alternance chez Alstom. Approfondissement des compétences en architecture logicielle, développement avancé et gestion de projets complexes.</div>
+                <button class="timeline-toggle" data-label="Voir les détails →">Voir les détails →</button>
+                <div class="timeline-details">
+                  <h4 style="font-family:var(--font-heading); font-size:0.9rem; font-weight:700; color:var(--text); margin-bottom:10px;">En lien avec</h4>
+                  <div class="timeline-comp-links">
+                    <a href="competences/python.html" class="timeline-comp-link">Python</a>
+                    <a href="competences/java.html" class="timeline-comp-link">Java</a>
+                    <a href="competences/organisation.html" class="timeline-comp-link">Organisation</a>
+                    <a href="competences/adaptabilite.html" class="timeline-comp-link">Adaptabilité</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MASTER USTHB -->
+            <div class="timeline-item">
+              <div class="timeline-dot dot-edu"></div>
+              <div class="timeline-content">
+                <span class="timeline-badge badge-edu">Formation</span>
+                <div class="timeline-title">Master Informatique — Ingénierie logicielle</div>
+                <div class="timeline-org"><img src="images/logo_usthb.webp" alt="USTHB" style="height:18px; vertical-align:middle; margin-right:8px; border-radius:3px;">USTHB — Alger (Bac+5)</div>
+                <div class="timeline-period">2020 — 2022</div>
+                <div class="timeline-desc">Formation en ingénierie logicielle. Réalisation d'un projet de fin d'études sur la simulation d'exécution de modèles de procédés logiciels.</div>
+                <button class="timeline-toggle" data-label="Voir les détails →">Voir les détails →</button>
+                <div class="timeline-details">
+                  <h4 style="font-family:var(--font-heading); font-size:0.9rem; font-weight:700; color:var(--text); margin-bottom:10px;">Contenu et projets</h4>
+                  <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:6px;">
+                    <li style="font-size:0.875rem; color:var(--text-secondary); padding-left:16px; position:relative;"><span style="position:absolute; left:0; color:var(--accent);">▸</span>Architecture logicielle et conception avancée</li>
+                    <li style="font-size:0.875rem; color:var(--text-secondary); padding-left:16px; position:relative;"><span style="position:absolute; left:0; color:var(--accent);">▸</span>Modèles de procédés logiciels</li>
+                    <li style="font-size:0.875rem; color:var(--text-secondary); padding-left:16px; position:relative;"><span style="position:absolute; left:0; color:var(--accent);">▸</span>PFE : Outil de simulation d'exécution de procédés (Java, multithreading)</li>
+                    <li style="font-size:0.875rem; color:var(--text-secondary); padding-left:16px; position:relative;"><span style="position:absolute; left:0; color:var(--accent);">▸</span>Alternance professionnelle chez Alstom</li>
+                  </ul>
+                  <h4 style="font-family:var(--font-heading); font-size:0.9rem; font-weight:700; color:var(--text); margin:14px 0 8px;">Compétences développées</h4>
+                  <div class="timeline-comp-links">
+                    <a href="competences/java.html" class="timeline-comp-link">Java</a>
+                    <a href="competences/git.html" class="timeline-comp-link">Git</a>
+                    <a href="competences/perseverance.html" class="timeline-comp-link">Persévérance</a>
+                    <a href="competences/communication-orale.html" class="timeline-comp-link">Communication orale</a>
+                  </div>
+                  <h4 style="font-family:var(--font-heading); font-size:0.9rem; font-weight:700; color:var(--text); margin:14px 0 8px;">Réalisation associée</h4>
+                  <div class="timeline-comp-links">
+                    <a href="realisations/simulation-processus.html" class="timeline-comp-link" style="background:var(--accent-light); color:#92400E;">⚙️ Simulation de procédés</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- LICENCE -->
+            <div class="timeline-item">
+              <div class="timeline-dot dot-edu"></div>
+              <div class="timeline-content">
+                <span class="timeline-badge badge-edu">Formation</span>
+                <div class="timeline-title">Licence Informatique — Ingénierie des Systèmes d'Information et des Logiciels</div>
+                <div class="timeline-org"><img src="images/logo_usthb.webp" alt="USTHB" style="height:18px; vertical-align:middle; margin-right:8px; border-radius:3px;">USTHB — Alger (Bac+3)</div>
+                <div class="timeline-period">2017 — 2020 (dont période COVID-19)</div>
+                <div class="timeline-desc">Formation en développement logiciel, bases de données, réseaux et génie logiciel. Réalisation d'un projet de fin d'études en développement Android.</div>
+                <button class="timeline-toggle" data-label="Voir les détails →">Voir les détails →</button>
+                <div class="timeline-details">
+                  <h4 style="font-family:var(--font-heading); font-size:0.9rem; font-weight:700; color:var(--text); margin-bottom:10px;">Contenu et projets</h4>
+                  <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:6px;">
+                    <li style="font-size:0.875rem; color:var(--text-secondary); padding-left:16px; position:relative;"><span style="position:absolute; left:0; color:var(--accent);">▸</span>Développement Java, algorithmes, structures de données</li>
+                    <li style="font-size:0.875rem; color:var(--text-secondary); padding-left:16px; position:relative;"><span style="position:absolute; left:0; color:var(--accent);">▸</span>Bases de données relationnelles (SQL, MariaDB)</li>
+                    <li style="font-size:0.875rem; color:var(--text-secondary); padding-left:16px; position:relative;"><span style="position:absolute; left:0; color:var(--accent);">▸</span>PFE : Application mobile Android d'envoi de colis entre particuliers</li>
+                  </ul>
+                  <h4 style="font-family:var(--font-heading); font-size:0.9rem; font-weight:700; color:var(--text); margin:14px 0 8px;">Compétences développées</h4>
+                  <div class="timeline-comp-links">
+                    <a href="competences/java.html" class="timeline-comp-link">Java / Android</a>
+                    <a href="competences/bases-de-donnees.html" class="timeline-comp-link">Gestion de BDD</a>
+                    <a href="competences/perseverance.html" class="timeline-comp-link">Persévérance</a>
+                    <a href="competences/adaptabilite.html" class="timeline-comp-link">Adaptabilité</a>
+                  </div>
+                  <div style="margin-top:12px;">
+                    <a href="realisations/application-mobile.html" class="timeline-comp-link" style="background:var(--accent-light); color:#92400E; display:inline-block; padding:4px 12px; border-radius:50px; font-size:0.75rem; font-weight:600;">📦 Voir la réalisation →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /timeline -->
+        </div>
+
+        <!-- SIDEBAR DROITE -->
+        <div style="width:280px; flex-shrink:0; position:sticky; top:calc(var(--navbar-h) + 20px);">
+          <div class="sidebar-card fade-in">
+            <div class="sidebar-card-title">En résumé</div>
+            <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:20px;">
+              <div style="padding:12px; background:var(--bg); border-radius:8px; border-left:3px solid var(--primary);">
+                <div style="font-size:0.7rem; font-weight:700; text-transform:uppercase; color:var(--text-secondary); margin-bottom:4px;">Niveau</div>
+                <div style="font-weight:600; font-size:0.9rem; color:var(--text);">Bac+5 — Master Informatique</div>
+              </div>
+              <div style="padding:12px; background:var(--bg); border-radius:8px; border-left:3px solid var(--accent);">
+                <div style="font-size:0.7rem; font-weight:700; text-transform:uppercase; color:var(--text-secondary); margin-bottom:4px;">Expérience</div>
+                <div style="font-weight:600; font-size:0.9rem; color:var(--text);">Alternance chez Alstom</div>
+              </div>
+              <div style="padding:12px; background:var(--bg); border-radius:8px; border-left:3px solid #10B981;">
+                <div style="font-size:0.7rem; font-weight:700; text-transform:uppercase; color:var(--text-secondary); margin-bottom:4px;">Domaine</div>
+                <div style="font-weight:600; font-size:0.9rem; color:var(--text);">Ingénierie logicielle</div>
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-primary" style="width:100%; justify-content:center; margin-bottom:10px;">Me contacter →</a>
+            <a href="competences.html" class="btn btn-outline" style="width:100%; justify-content:center;">Voir mes compétences</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">Lydia <span>ALIK</span></div>
+      <p class="footer-text">Experte en ingénierie logicielle — Portfolio professionnel</p>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a><a href="presentation.html">Présentation</a>
+        <a href="competences.html">Compétences</a><a href="realisations.html">Réalisations</a>
+        <a href="parcours.html">Parcours</a><a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

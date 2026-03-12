@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for f in \"c:\\\\Users\\\\Lyali\\\\OneDrive\\\\Documents\\\\Portfolio\\\\realisations\\\\analyse-logs.html\" \"c:\\\\Users\\\\Lyali\\\\OneDrive\\\\Documents\\\\Portfolio\\\\realisations\\\\syntax-checker.html\" \"c:\\\\Users\\\\Lyali\\\\OneDrive\\\\Documents\\\\Portfolio\\\\realisations\\\\application-mobile.html\" \"c:\\\\Users\\\\Lyali\\\\OneDrive\\\\Documents\\\\Portfolio\\\\realisations\\\\reservation-avion.html\")",
+      "Bash(do echo \"=== $f ===\")",
+      "Read(//c/Users/Lyali/OneDrive/Documents/Portfolio/**)",
+      "Bash(done)",
+      "Bash(for f in \"c:\\\\Users\\\\Lyali\\\\OneDrive\\\\Documents\\\\Portfolio\\\\competences\\\\python.html\" \"c:\\\\Users\\\\Lyali\\\\OneDrive\\\\Documents\\\\Portfolio\\\\competences\\\\java.html\" \"c:\\\\Users\\\\Lyali\\\\OneDrive\\\\Documents\\\\Portfolio\\\\competences\\\\git.html\" \"c:\\\\Users\\\\Lyali\\\\OneDrive\\\\Documents\\\\Portfolio\\\\competences\\\\bases-de-donnees.html\")"
+    ]
+  }
+}
