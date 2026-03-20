@@ -14,6 +14,19 @@
       <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
       <li class="nav-item"><a class="nav-link" href="../presentation.html">Présentation</a></li>
       <li class="nav-item">
+        <a class="nav-link has-dropdown" href="../realisations.html">Réalisations</a>
+        <div class="dropdown">
+          <div class="dropdown-section">Vue d'ensemble</div>
+          <a href="../realisations.html">Toutes les réalisations</a>
+          <div class="dropdown-section">Projets</div>
+          <a href="../realisations/syntax-checker.html">Syntax Checker</a>
+          <a href="../realisations/analyse-logs.html">Outil d'analyse de logs</a>
+          <a href="../realisations/simulation-processus.html">Simulation d'exécution de modèles de procédés logiciels</a>
+          <a href="../realisations/application-mobile.html">Application mobile d'envoi de colis</a>
+          <a href="../realisations/reservation-avion.html">Site de réservation de billets d'avion</a>
+        </div>
+      </li>
+      <li class="nav-item">
         <a class="nav-link has-dropdown active" href="../competences.html">Compétences</a>
         <div class="dropdown">
           <div class="dropdown-section">Vue d'ensemble</div>
@@ -27,19 +40,6 @@
           <a href="perseverance.html">Persévérance</a>
           <a href="acceptation-feedback.html">Acceptation de feedback</a>
           <a href="organisation.html">Organisation</a><a href="adaptabilite.html">Adaptabilité</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link has-dropdown" href="../realisations.html">Réalisations</a>
-        <div class="dropdown">
-          <div class="dropdown-section">Vue d'ensemble</div>
-          <a href="../realisations.html">Toutes les réalisations</a>
-          <div class="dropdown-section">Projets</div>
-          <a href="../realisations/analyse-logs.html">Outil d'analyse de logs</a>
-          <a href="../realisations/syntax-checker.html">Syntax Checker</a>
-          <a href="../realisations/simulation-processus.html">Simulation de procédés</a>
-          <a href="../realisations/application-mobile.html">Application mobile colis</a>
-          <a href="../realisations/reservation-avion.html">Site de réservation</a>
         </div>
       </li>
       <li class="nav-item"><a class="nav-link" href="../parcours.html">Parcours</a></li>
@@ -78,7 +78,6 @@
 
           <div class="article-section fade-in fade-in-delay-1">
             <h2 class="article-section-title">Mes éléments de preuve</h2>
-            <h4 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:700; color:var(--text); margin:0 0 12px;">Anecdotes</h4>
             <div class="anecdote-card">
               <p>J'ai particulièrement développé cette compétence au travers de mes projets de fin d'études, où j'ai utilisé Java pour répondre à des besoins très différents. Dans l'un d'eux, j'ai conçu <a href="../realisations/application-mobile.html" style="color:var(--primary); font-weight:600;">une application mobile complète</a> sous Android Studio, avec gestion des comptes, messagerie et communication avec une base de données. Dans l'autre, j'ai développé une couche de simulation d'exécution sur <a href="../realisations/simulation-processus.html" style="color:var(--primary); font-weight:600;">un logiciel existant en Java</a>, intégrant du multithreading pour modéliser l'exécution parallèle de tâches.</p>
               <p>Ces projets m'ont permis d'explorer à la fois le développement applicatif orienté utilisateur et la programmation avancée liée aux processus concurrents, deux domaines exigeants qui m'ont fait gagner en maturité technique.</p>
@@ -91,17 +90,17 @@
           <div class="article-section fade-in">
             <h2 class="article-section-title">Mon autocritique</h2>
             <h4 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:700; color:var(--text); margin:0 0 12px;">Niveau actuel, recul et marge de progression</h4>
-            <p>Je possède aujourd'hui un bon niveau en Java, qui me permet de développer des applications complètes et d'aborder des sujets plus avancés liés à l'architecture logicielle. Grâce aux différents projets réalisés, notamment ceux menés durant ma formation et mon alternance, j'ai appris à structurer un projet de manière claire, à organiser les différentes couches de l'application et à anticiper certains points critiques comme la gestion des données ou la communication entre les composants. Avec le recul, je suis également plus à l'aise pour choisir des solutions techniques adaptées au contexte d'un projet. Toutefois, je souhaite encore progresser sur des environnements professionnels plus complets, en approfondissant notamment l'utilisation de frameworks largement utilisés dans l'écosystème Java comme Spring Boot, Hibernate ou JPA, ainsi que sur les bonnes pratiques de tests automatisés et d'architecture logicielle.</p>
+            <p>Je possède aujourd'hui un bon niveau en Java, qui me permet de développer des applications complètes et d'aborder des sujets plus avancés liés à l'architecture logicielle. Grâce aux différents projets réalisés, notamment ceux menés durant ma formation et mon alternance, j'ai appris à structurer un projet de manière claire, à organiser les différentes couches de l'application et à anticiper certains points critiques comme la gestion des données ou la communication entre les composants. Avec le recul, je suis également plus à l'aise pour choisir des solutions techniques adaptées au contexte d'un projet. Toutefois, je souhaite encore progresser sur des environnements professionnels plus complets, en approfondissant notamment l'utilisation de frameworks largement utilisés dans l'écosystème Java, ainsi que sur les bonnes pratiques de tests automatisés et d'architecture logicielle.</p>
             <div style="margin-top:16px;">
               <div style="display:flex; justify-content:space-between; font-size:0.85rem; font-weight:600; margin-bottom:8px;">
                 <span>Niveau actuel</span><span style="color:var(--primary);">70%</span>
               </div>
               <div class="skill-bar" style="height:10px;"><div class="skill-fill tech" data-pct="70"></div></div>
             </div>
-            <h4 style="font-family:var(--font-heading); font-size:0.9rem; font-weight:700; color:var(--text); margin:20px 0 8px;">Vitesse d'acquisition</h4>
-            <p style="font-size:0.9rem;">Java a été mon premier langage académique, ce qui m'a donné une base solide en programmation orientée objet. Par la suite, j'ai étendu cette maîtrise à des contextes plus complexes, multithreading, Spring Boot, Android, à chaque fois en m'appuyant sur les fondamentaux pour apprendre rapidement le reste. La progression a été régulière et structurée.</p>
-            <h4 style="font-family:var(--font-heading); font-size:0.9rem; font-weight:700; color:var(--text); margin:20px 0 8px;">Conseils pour moi-même et les autres</h4>
-            <p style="font-size:0.9rem;">Avec l'expérience, je conseille de bien maîtriser les principes de l'orienté objet avant d'aborder les frameworks. Comprendre l'héritage, l'encapsulation, les interfaces et les design patterns est indispensable pour ne pas apprendre Spring Boot "en surface". Je recommande aussi de s'exposer à du code professionnel tôt, open source, projets en équipe, pour comprendre comment Java est utilisé dans des environnements réels.</p>
+            <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin:20px 0 8px;">Vitesse d'acquisition</h4>
+            <p>Java a été mon premier langage académique, ce qui m'a donné une base solide en programmation orientée objet. Par la suite, j'ai étendu cette maîtrise à des contextes plus complexes, multithreading, Spring Boot, Android, à chaque fois en m'appuyant sur les fondamentaux pour apprendre rapidement le reste. La progression a été régulière et structurée.</p>
+            <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin:20px 0 8px;">Conseils pour moi-même et les autres</h4>
+            <p>Avec l'expérience, je conseille de bien maîtriser les principes de l'orienté objet avant d'aborder les frameworks. Comprendre l'héritage, l'encapsulation, les interfaces et les design patterns est indispensable pour ne pas apprendre Spring Boot "en surface". Je recommande aussi de s'exposer à du code professionnel tôt, open source, projets en équipe, pour comprendre comment Java est utilisé dans des environnements réels.</p>
           </div>
 
           <div class="article-section fade-in">
@@ -109,7 +108,7 @@
             <h4 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:700; color:var(--text); margin:0 0 12px;">Place dans mon projet professionnel et objectif à moyen terme</h4>
             <p>Java occupe une place importante dans mon profil d'ingénieur en développement, car il s'agit d'un langage très utilisé dans de nombreux environnements professionnels. À moyen terme, je souhaite renforcer cette compétence afin de pouvoir intervenir sur des projets plus complexes, notamment dans le développement backend d'applications, la conception d'API ou encore la création d'outils logiciels robustes. L'objectif est de faire de Java une compétence technique solide et polyvalente, que je pourrai mobiliser dans différents types de projets.</p>
             <h4 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:700; color:var(--text); margin:20px 0 12px;">Formations et autoformations</h4>
-            <p>Pour continuer à progresser, je prévois de suivre des formations ciblées sur Spring Boot, l'architecture propre appliquée à Java, et les tests automatisés. En parallèle, je poursuis une autoformation régulière via des tutoriels, de la documentation officielle et la pratique sur de petits projets personnels afin d'améliorer continuellement ma maîtrise du langage et de son écosystème.</p>
+            <p>Pour continuer à progresser, je prévois de suivre des formations ciblées sur d'autres frameworks, l'architecture propre appliquée à Java, et les tests automatisés. En parallèle, je poursuis une autoformation régulière via des tutoriels, de la documentation officielle et la pratique sur de petits projets personnels afin d'améliorer continuellement ma maîtrise du langage et de son écosystème.</p>
           </div>
         </div>
 
@@ -117,9 +116,9 @@
           <div class="sidebar-card fade-in">
             <div class="sidebar-card-title">Réalisations associées</div>
             <div class="sidebar-links">
-              <a href="../realisations/simulation-processus.html" class="sidebar-link"><span>⚙️</span> Simulation de procédés</a>
-              <a href="../realisations/application-mobile.html" class="sidebar-link"><span>📦</span> Application mobile colis</a>
-              <a href="../realisations/reservation-avion.html" class="sidebar-link"><span>✈️</span> Site de réservation</a>
+              <a href="../realisations/simulation-processus.html" class="sidebar-link"><span>⚙️</span> Simulation d'exécution de modèles de procédés logiciels</a>
+              <a href="../realisations/application-mobile.html" class="sidebar-link"><span>📦</span> Application mobile d'envoi de colis</a>
+              <a href="../realisations/reservation-avion.html" class="sidebar-link"><span>✈️</span> Site de réservation de billets d'avion</a>
             </div>
           </div>
           <div class="sidebar-card fade-in fade-in-delay-1" style="margin-top:20px;">

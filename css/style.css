@@ -1151,7 +1151,6 @@ footer {
   section { padding: 56px 0; }
   .hero-inner { grid-template-columns: 1fr; gap: 40px; text-align: center; }
   .hero-actions { justify-content: center; }
-  .hero-visual { order: -1; }
   .hero-card { max-width: 100%; }
   .nav-links { display: none; }
   .hamburger { display: flex; }

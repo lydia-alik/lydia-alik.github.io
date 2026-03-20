@@ -14,6 +14,19 @@
       <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
       <li class="nav-item"><a class="nav-link" href="presentation.html">Présentation</a></li>
       <li class="nav-item">
+        <a class="nav-link has-dropdown" href="realisations.html">Réalisations</a>
+        <div class="dropdown">
+          <div class="dropdown-section">Vue d'ensemble</div>
+          <a href="realisations.html">Toutes les réalisations</a>
+          <div class="dropdown-section">Projets</div>
+          <a href="realisations/syntax-checker.html">Syntax Checker</a>
+          <a href="realisations/analyse-logs.html">Outil d'analyse de logs</a>
+          <a href="realisations/simulation-processus.html">Simulation d'exécution de modèles de procédés logiciels</a>
+          <a href="realisations/application-mobile.html">Application mobile d'envoi de colis</a>
+          <a href="realisations/reservation-avion.html">Site de réservation de billets d'avion</a>
+        </div>
+      </li>
+      <li class="nav-item">
         <a class="nav-link has-dropdown" href="competences.html">Compétences</a>
         <div class="dropdown">
           <div class="dropdown-section">Vue d'ensemble</div>
@@ -28,19 +41,6 @@
           <a href="competences/acceptation-feedback.html">Acceptation de feedback</a>
           <a href="competences/organisation.html">Organisation</a>
           <a href="competences/adaptabilite.html">Adaptabilité</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link has-dropdown" href="realisations.html">Réalisations</a>
-        <div class="dropdown">
-          <div class="dropdown-section">Vue d'ensemble</div>
-          <a href="realisations.html">Toutes les réalisations</a>
-          <div class="dropdown-section">Projets</div>
-          <a href="realisations/analyse-logs.html">Outil d'analyse de logs</a>
-          <a href="realisations/syntax-checker.html">Syntax Checker</a>
-          <a href="realisations/simulation-processus.html">Simulation de procédés</a>
-          <a href="realisations/application-mobile.html">Application mobile colis</a>
-          <a href="realisations/reservation-avion.html">Site de réservation</a>
         </div>
       </li>
       <li class="nav-item"><a class="nav-link active" href="parcours.html">Parcours</a></li>
@@ -61,7 +61,7 @@
       <div class="page-hero-breadcrumb"><a href="index.html">Accueil</a> › Parcours</div>
       <div class="page-hero-tag">Parcours</div>
       <h1>Mon <span style="color:var(--primary);">parcours</span></h1>
-      <p class="page-hero-sub">Une frise chronologique de mes expériences professionnelles, formations et projets — présentée en ordre anti-chronologique.</p>
+      <p class="page-hero-sub">Une frise chronologique de mes expériences professionnelles et formations présentée en ordre anti-chronologique.</p>
     </div>
   </div>
 
@@ -75,7 +75,6 @@
           <div class="legend fade-in">
             <div class="legend-item"><div class="legend-dot" style="background:var(--primary);"></div> Expérience professionnelle</div>
             <div class="legend-item"><div class="legend-dot" style="background:var(--accent);"></div> Formation</div>
-            <div class="legend-item"><div class="legend-dot" style="background:#10B981;"></div> Certification / Projet majeur</div>
           </div>
 
           <div class="timeline">
@@ -88,18 +87,18 @@
                 <div class="timeline-title">Ingénieure système de pilotage automatique en alternance</div>
                 <div class="timeline-org"><img src="images/logo_alstom.webp" alt="Alstom" style="height:18px; vertical-align:middle; margin-right:8px; border-radius:3px;">Alstom — Saint-Ouen</div>
                 <div class="timeline-period">Septembre 2024 — présent</div>
-                <div class="timeline-desc">Conception et développement d'outils Python internes pour l'analyse de données ferroviaires et la vérification de fichiers de données embarqués. Travail au sein d'une équipe pluridisciplinaire (designers, équipes métier, managers).</div>
+                <div class="timeline-desc">Conception et développement d'outils Python internes pour l'analyse de données ferroviaires et la vérification de fichiers de données embarqués. Travail au sein d'une équipe pluridisciplinaire.</div>
                 <button class="timeline-toggle" data-label="Voir les détails →">Voir les détails →</button>
                 <div class="timeline-details">
                   <h4 style="font-family:var(--font-heading); font-size:0.9rem; font-weight:700; color:var(--text); margin-bottom:10px;">Missions et responsabilités</h4>
                   <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:6px;">
                     <li style="font-size:0.875rem; color:var(--text-secondary); padding-left:16px; position:relative;">
                       <span style="position:absolute; left:0; color:var(--primary);">▸</span>
-                      Développement de l'outil d'analyse de logs (Python, Pandas, Polars) — automatisation d'un processus manuel
+                      Développement de l'outil d'analyse de logs (Python, Pandas, Polars). Automatisation d'un processus manuel
                     </li>
                     <li style="font-size:0.875rem; color:var(--text-secondary); padding-left:16px; position:relative;">
                       <span style="position:absolute; left:0; color:var(--primary);">▸</span>
-                      Conception du Syntax Checker (Python, lxml, JSON) — intégré dans le pipeline de compilation
+                      Conception du Syntax Checker (Python, lxml, JSON),intégré dans le pipeline de compilation
                     </li>
                     <li style="font-size:0.875rem; color:var(--text-secondary); padding-left:16px; position:relative;">
                       <span style="position:absolute; left:0; color:var(--primary);">▸</span>
@@ -133,10 +132,10 @@
               <div class="timeline-dot dot-edu"></div>
               <div class="timeline-content">
                 <span class="timeline-badge badge-edu">Formation</span>
-                <div class="timeline-title">Master Experte en ingénierie logicielle</div>
-                <div class="timeline-org"><img src="images/logo_esiea.webp" alt="ESIEA" style="height:18px; vertical-align:middle; margin-right:8px; border-radius:3px;">ESIEA — Paris (Bac+5)</div>
+                <div class="timeline-title">Master Expert en ingénierie logicielle</div>
+                <div class="timeline-org"><img src="images/logo_esiea.webp" alt="ESIEA" style="height:18px; vertical-align:middle; margin-right:8px; border-radius:3px;">ESIEA, Paris (Bac+5)</div>
                 <div class="timeline-period">2024 — présent (en alternance)</div>
-                <div class="timeline-desc">Formation d'experte en ingénierie logicielle, menée en parallèle de l'alternance chez Alstom. Approfondissement des compétences en architecture logicielle, développement avancé et gestion de projets complexes.</div>
+                <div class="timeline-desc">Formation d'expert en ingénierie logicielle, menée en parallèle de mon alternance chez l'entreprise Alstom. Approfondissement des compétences en architecture logicielle, développement avancé et gestion de projets complexes.</div>
                 <button class="timeline-toggle" data-label="Voir les détails →">Voir les détails →</button>
                 <div class="timeline-details">
                   <h4 style="font-family:var(--font-heading); font-size:0.9rem; font-weight:700; color:var(--text); margin-bottom:10px;">En lien avec</h4>
@@ -155,8 +154,8 @@
               <div class="timeline-dot dot-edu"></div>
               <div class="timeline-content">
                 <span class="timeline-badge badge-edu">Formation</span>
-                <div class="timeline-title">Master Informatique — Ingénierie logicielle</div>
-                <div class="timeline-org"><img src="images/logo_usthb.webp" alt="USTHB" style="height:18px; vertical-align:middle; margin-right:8px; border-radius:3px;">USTHB — Alger (Bac+5)</div>
+                <div class="timeline-title">Master Informatique en Ingénierie logicielle</div>
+                <div class="timeline-org"><img src="images/logo_usthb.webp" alt="USTHB" style="height:18px; vertical-align:middle; margin-right:8px; border-radius:3px;">USTHB, Alger (Bac+5)</div>
                 <div class="timeline-period">2020 — 2022</div>
                 <div class="timeline-desc">Formation en ingénierie logicielle. Réalisation d'un projet de fin d'études sur la simulation d'exécution de modèles de procédés logiciels.</div>
                 <button class="timeline-toggle" data-label="Voir les détails →">Voir les détails →</button>
@@ -177,7 +176,7 @@
                   </div>
                   <h4 style="font-family:var(--font-heading); font-size:0.9rem; font-weight:700; color:var(--text); margin:14px 0 8px;">Réalisation associée</h4>
                   <div class="timeline-comp-links">
-                    <a href="realisations/simulation-processus.html" class="timeline-comp-link" style="background:var(--accent-light); color:#92400E;">⚙️ Simulation de procédés</a>
+                    <a href="realisations/simulation-processus.html" class="timeline-comp-link" style="background:var(--accent-light); color:#92400E;">⚙️ Simulation d'exécution de modèles de procédés logiciels</a>
                   </div>
                 </div>
               </div>
@@ -188,9 +187,9 @@
               <div class="timeline-dot dot-edu"></div>
               <div class="timeline-content">
                 <span class="timeline-badge badge-edu">Formation</span>
-                <div class="timeline-title">Licence Informatique — Ingénierie des Systèmes d'Information et des Logiciels</div>
-                <div class="timeline-org"><img src="images/logo_usthb.webp" alt="USTHB" style="height:18px; vertical-align:middle; margin-right:8px; border-radius:3px;">USTHB — Alger (Bac+3)</div>
-                <div class="timeline-period">2017 — 2020 (dont période COVID-19)</div>
+                <div class="timeline-title">Licence Informatique en Ingénierie des Systèmes d'Information et des Logiciels</div>
+                <div class="timeline-org"><img src="images/logo_usthb.webp" alt="USTHB" style="height:18px; vertical-align:middle; margin-right:8px; border-radius:3px;">USTHB, Alger (Bac+3)</div>
+                <div class="timeline-period">2017 — 2020</div>
                 <div class="timeline-desc">Formation en développement logiciel, bases de données, réseaux et génie logiciel. Réalisation d'un projet de fin d'études en développement Android.</div>
                 <button class="timeline-toggle" data-label="Voir les détails →">Voir les détails →</button>
                 <div class="timeline-details">

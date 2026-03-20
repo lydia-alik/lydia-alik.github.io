@@ -14,6 +14,19 @@
       <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
       <li class="nav-item"><a class="nav-link" href="../presentation.html">Présentation</a></li>
       <li class="nav-item">
+        <a class="nav-link has-dropdown active" href="../realisations.html">Réalisations</a>
+        <div class="dropdown">
+          <div class="dropdown-section">Vue d'ensemble</div>
+          <a href="../realisations.html">Toutes les réalisations</a>
+          <div class="dropdown-section">Projets</div>
+          <a href="syntax-checker.html">Syntax Checker</a>
+          <a href="analyse-logs.html">Outil d'analyse de logs</a>
+          <a href="simulation-processus.html">Simulation d'exécution de modèles de procédés logiciels</a>
+          <a href="application-mobile.html">Application mobile d'envoi de colis</a>
+          <a href="reservation-avion.html">Site de réservation de billets d'avion</a>
+        </div>
+      </li>
+      <li class="nav-item">
         <a class="nav-link has-dropdown" href="../competences.html">Compétences</a>
         <div class="dropdown">
           <div class="dropdown-section">Vue d'ensemble</div>
@@ -28,19 +41,6 @@
           <a href="../competences/acceptation-feedback.html">Acceptation de feedback</a>
           <a href="../competences/organisation.html">Organisation</a>
           <a href="../competences/adaptabilite.html">Adaptabilité</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link has-dropdown active" href="../realisations.html">Réalisations</a>
-        <div class="dropdown">
-          <div class="dropdown-section">Vue d'ensemble</div>
-          <a href="../realisations.html">Toutes les réalisations</a>
-          <div class="dropdown-section">Projets</div>
-          <a href="analyse-logs.html">Outil d'analyse de logs</a>
-          <a href="syntax-checker.html">Syntax Checker</a>
-          <a href="simulation-processus.html">Simulation de procédés</a>
-          <a href="application-mobile.html">Application mobile colis</a>
-          <a href="reservation-avion.html">Site de réservation</a>
         </div>
       </li>
       <li class="nav-item"><a class="nav-link" href="../parcours.html">Parcours</a></li>
@@ -61,7 +61,7 @@
       <div class="page-hero-breadcrumb"><a href="../index.html">Accueil</a> › <a href="../realisations.html">Réalisations</a> › Outil d'analyse de logs</div>
       <div class="page-hero-tag" style="background:var(--accent-light); color:#92400E;">Réalisation 01 — Alternance Alstom</div>
       <h1>📊 Outil d'analyse de logs</h1>
-      <p class="page-hero-sub">Extraction, traitement et analyse automatisée de données issues des trains en exploitation, un outil Python complet pour fiabiliser et accélérer l'analyse d'évènements liés au domaine ferroviaires.</p>
+      <p class="page-hero-sub">Extraction, traitement et analyse automatisée de données issues des trains en exploitation, un outil Python complet pour fiabiliser et accélérer l'analyse d'évènements liés au domaine ferroviaire.</p>
       <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:16px;">
         <span class="tag tech">Python</span><span class="tag tech">Pandas</span>
         <span class="tag tech">Polars</span><span class="tag tech">Excel</span><span class="tag">Alstom</span>
@@ -80,6 +80,64 @@
           </div>
 
           <!-- OBJECTIFS -->
+          <!-- SCHÉMA PIPELINE -->
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Fonctionnement en un coup d'œil</h2>
+            <div style="overflow-x:auto; padding:8px 0;">
+              <div style="display:flex; align-items:stretch; gap:0; min-width:560px;">
+
+                <div style="display:flex; flex-direction:column; align-items:center; flex:1;">
+                  <div style="background:var(--primary); color:white; border-radius:10px; padding:14px 10px; text-align:center; width:100%; box-sizing:border-box;">
+                    <div style="font-size:1.4rem; margin-bottom:6px;">🚂</div>
+                    <div style="font-weight:700; font-size:0.8rem;">Logs bruts</div>
+                    <div style="font-size:0.7rem; opacity:0.85; margin-top:4px;">Calculateurs<br>embarqués</div>
+                  </div>
+                </div>
+
+                <div style="display:flex; align-items:center; padding:0 6px; color:var(--primary); font-size:1.2rem; font-weight:700;">→</div>
+
+                <div style="display:flex; flex-direction:column; align-items:center; flex:1;">
+                  <div style="background:#EDE9FE; border-radius:10px; padding:14px 10px; text-align:center; width:100%; box-sizing:border-box; border:2px solid #C4B5FD;">
+                    <div style="font-size:1.4rem; margin-bottom:6px;">📥</div>
+                    <div style="font-weight:700; font-size:0.8rem; color:var(--text);">Extraction</div>
+                    <div style="font-size:0.7rem; color:var(--text-secondary); margin-top:4px;">Lecture &<br>nettoyage</div>
+                  </div>
+                </div>
+
+                <div style="display:flex; align-items:center; padding:0 6px; color:var(--primary); font-size:1.2rem; font-weight:700;">→</div>
+
+                <div style="display:flex; flex-direction:column; align-items:center; flex:1;">
+                  <div style="background:#EDE9FE; border-radius:10px; padding:14px 10px; text-align:center; width:100%; box-sizing:border-box; border:2px solid #C4B5FD;">
+                    <div style="font-size:1.4rem; margin-bottom:6px;">⚙️</div>
+                    <div style="font-weight:700; font-size:0.8rem; color:var(--text);">Traitement</div>
+                    <div style="font-size:0.7rem; color:var(--text-secondary); margin-top:4px;">Pandas · Polars<br>DataFrames</div>
+                  </div>
+                </div>
+
+                <div style="display:flex; align-items:center; padding:0 6px; color:var(--primary); font-size:1.2rem; font-weight:700;">→</div>
+
+                <div style="display:flex; flex-direction:column; align-items:center; flex:1;">
+                  <div style="background:#FEE2E2; border-radius:10px; padding:14px 10px; text-align:center; width:100%; box-sizing:border-box; border:2px solid #FCA5A5;">
+                    <div style="font-size:1.4rem; margin-bottom:6px;">🔎</div>
+                    <div style="font-weight:700; font-size:0.8rem; color:var(--text);">Analyse</div>
+                    <div style="font-size:0.7rem; color:var(--text-secondary); margin-top:4px;">Détection<br>d'anomalies</div>
+                  </div>
+                </div>
+
+                <div style="display:flex; align-items:center; padding:0 6px; color:var(--primary); font-size:1.2rem; font-weight:700;">→</div>
+
+                <div style="display:flex; flex-direction:column; align-items:center; flex:1;">
+                  <div style="background:#D1FAE5; border-radius:10px; padding:14px 10px; text-align:center; width:100%; box-sizing:border-box; border:2px solid #6EE7B7;">
+                    <div style="font-size:1.4rem; margin-bottom:6px;">📊</div>
+                    <div style="font-weight:700; font-size:0.8rem; color:var(--text);">Rapport Excel</div>
+                    <div style="font-size:0.7rem; color:var(--text-secondary); margin-top:4px;">Exploitable par<br>toutes les équipes</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
           <div class="article-section fade-in fade-in-delay-1">
             <h2 class="article-section-title">Objectifs</h2>
             <p>L'objectif principal du projet était d'automatiser un processus d'analyse auparavant réalisé manuellement afin de rendre les enregistrements issus des trains plus accessibles et exploitables pour les équipes métier. Il s'agissait également de permettre une meilleure compréhension des incidents et anomalies tout en produisant des rapports clairs, standardisés et faciles à interpréter.</p>
@@ -150,7 +208,7 @@
           <div class="article-section fade-in">
             <h2 class="article-section-title">Acteurs</h2>
             <ul>
-              <li><strong>Moi-même :</strong> rôle de développeuse, d'analyste et de facilitateur entre les équipes — traduction des besoins métiers en solutions techniques</li>
+              <li><strong>Moi-même :</strong> rôle de développeuse, d'analyste et de facilitatrice entre les équipes et pour traduction des besoins métiers en solutions techniques</li>
               <li><strong>L'équipe technique :</strong> validation des interprétations et des règles d'analyse</li>
               <li><strong>L'équipe métier :</strong> contribution à définir les besoins et cible des rapports générés</li>
               <li><strong>Mon tuteur :</strong> accompagnement sur les aspects méthodologiques et validation des différents livrables</li>
@@ -160,6 +218,23 @@
           <!-- RÉSULTATS -->
           <div class="article-section fade-in">
             <h2 class="article-section-title">Résultats</h2>
+
+            <!-- CARTES CHIFFRES CLÉS -->
+            <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; margin-bottom:20px;">
+              <div style="background:var(--primary); color:white; border-radius:12px; padding:18px 14px; text-align:center;">
+                <div style="font-size:1.8rem; font-weight:800; margin-bottom:4px;">100%</div>
+                <div style="font-size:0.75rem; opacity:0.9; line-height:1.4;">Automatisation<br>du processus</div>
+              </div>
+              <div style="background:#059669; color:white; border-radius:12px; padding:18px 14px; text-align:center;">
+                <div style="font-size:1.8rem; font-weight:800; margin-bottom:4px;">0</div>
+                <div style="font-size:0.75rem; opacity:0.9; line-height:1.4;">Intervention<br>manuelle requise</div>
+              </div>
+              <div style="background:#2563EB; color:white; border-radius:12px; padding:18px 14px; text-align:center;">
+                <div style="font-size:1.8rem; font-weight:800; margin-bottom:4px;">2</div>
+                <div style="font-size:0.75rem; opacity:0.9; line-height:1.4;">Équipes utilisatrices<br>(tech & métier)</div>
+              </div>
+            </div>
+
             <div class="highlight-box success">
               <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin-bottom:10px;">Pour l'entreprise</h4>
               <p>Le projet a permis d'automatiser une tâche répétitive et chronophage, ce qui a conduit à une réduction significative du temps de traitement et du risque d'erreur humaine. L'outil est capable de traiter un volume important de données et d'offrir une meilleure compréhension des incidents grâce à des informations contextualisées. Il est également réutilisable et améliorable, ce qui lui confère une valeur ajoutée durable pour d'autres projets internes.</p>
@@ -203,14 +278,14 @@
             <div class="sidebar-card-title">Autres réalisations</div>
             <div class="sidebar-links">
               <a href="syntax-checker.html" class="sidebar-link"><span>🔍</span> Syntax Checker</a>
-              <a href="simulation-processus.html" class="sidebar-link"><span>⚙️</span> Simulation de procédés</a>
+              <a href="simulation-processus.html" class="sidebar-link"><span>⚙️</span> Simulation d'exécution de modèles de procédés logiciels</a>
               <a href="application-mobile.html" class="sidebar-link"><span>📦</span> Application mobile</a>
-              <a href="reservation-avion.html" class="sidebar-link"><span>✈️</span> Site de réservation</a>
+              <a href="reservation-avion.html" class="sidebar-link"><span>✈️</span> Site de réservation de billets d'avion</a>
             </div>
           </div>
           <div class="sidebar-card fade-in fade-in-delay-2" style="margin-top:20px;">
-            <a href="../realisations.html" class="btn btn-outline" style="width:100%; justify-content:center; margin-bottom:10px;">← Toutes les réalisations</a>
-            <a href="syntax-checker.html" class="btn btn-primary" style="width:100%; justify-content:center;">Syntax Checker →</a>
+            <a href="syntax-checker.html" class="btn btn-outline" style="width:100%; justify-content:center; margin-bottom:10px;">← Syntax Checker</a>
+            <a href="simulation-processus.html" class="btn btn-primary" style="width:100%; justify-content:center;">Simulation de procédés logiciels →</a>
           </div>
         </div>
       </div>

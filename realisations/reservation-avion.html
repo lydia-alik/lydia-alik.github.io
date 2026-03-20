@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site de réservation — Lydia ALIK</title>
+  <title>Site de réservation de billets d'avion — Lydia ALIK</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -13,6 +13,19 @@
     <ul class="nav-links">
       <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
       <li class="nav-item"><a class="nav-link" href="../presentation.html">Présentation</a></li>
+      <li class="nav-item">
+        <a class="nav-link has-dropdown active" href="../realisations.html">Réalisations</a>
+        <div class="dropdown">
+          <div class="dropdown-section">Vue d'ensemble</div>
+          <a href="../realisations.html">Toutes les réalisations</a>
+          <div class="dropdown-section">Projets</div>
+          <a href="syntax-checker.html">Syntax Checker</a>
+          <a href="analyse-logs.html">Outil d'analyse de logs</a>
+          <a href="simulation-processus.html">Simulation d'exécution de modèles de procédés logiciels</a>
+          <a href="application-mobile.html">Application mobile d'envoi de colis</a>
+          <a href="reservation-avion.html">Site de réservation de billets d'avion</a>
+        </div>
+      </li>
       <li class="nav-item">
         <a class="nav-link has-dropdown" href="../competences.html">Compétences</a>
         <div class="dropdown">
@@ -30,19 +43,6 @@
           <a href="../competences/adaptabilite.html">Adaptabilité</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link has-dropdown active" href="../realisations.html">Réalisations</a>
-        <div class="dropdown">
-          <div class="dropdown-section">Vue d'ensemble</div>
-          <a href="../realisations.html">Toutes les réalisations</a>
-          <div class="dropdown-section">Projets</div>
-          <a href="analyse-logs.html">Outil d'analyse de logs</a>
-          <a href="syntax-checker.html">Syntax Checker</a>
-          <a href="simulation-processus.html">Simulation de procédés</a>
-          <a href="application-mobile.html">Application mobile colis</a>
-          <a href="reservation-avion.html">Site de réservation</a>
-        </div>
-      </li>
       <li class="nav-item"><a class="nav-link" href="../parcours.html">Parcours</a></li>
       <li class="nav-item"><a class="nav-link nav-contact-btn" href="../contact.html">Contact</a></li>
     </ul>
@@ -58,7 +58,7 @@
 <div class="page-content">
   <div class="page-hero" style="background: linear-gradient(135deg, #EDE9FE, #F9FAFB);">
     <div class="container">
-      <div class="page-hero-breadcrumb"><a href="../index.html">Accueil</a> › <a href="../realisations.html">Réalisations</a> › Site de réservation</div>
+      <div class="page-hero-breadcrumb"><a href="../index.html">Accueil</a> › <a href="../realisations.html">Réalisations</a> › Site de réservation de billets d'avion</div>
       <div class="page-hero-tag" style="background:var(--accent-light); color:#92400E;">Réalisation 05 — Projet académique</div>
       <h1>✈️ Site de réservation de billets d'avion</h1>
       <p class="page-hero-sub">Plateforme web complète développée avec Spring Boot, React et PostgreSQL, une application full-stack moderne simulant un vrai service de réservation de billets d'avion.</p>
@@ -77,6 +77,61 @@
             <h2 class="article-section-title">Présentation</h2>
             <p>Dans le cadre d'un projet d'école réalisé en binôme, j'ai participé au développement d'une plateforme web de réservation de billets d'avion. L'objectif était de concevoir une application complète permettant aux utilisateurs de consulter des vols, rechercher des destinations, créer un compte, effectuer des réservations et gérer leurs informations.</p>
             <p>Le projet reposait sur une architecture moderne utilisant Java Spring Boot pour le backend, React pour le frontend, et une base de données relationnelle PostgreSQL pour la gestion des informations (utilisateurs, vols, réservations…). Ce projet avait pour vocation de simuler un service complet comparable à une plateforme de réservation réelle, tout en respectant des contraintes de cohérence, de sécurité et de fluidité d'expérience utilisateur.</p>
+          </div>
+
+          <!-- SCHÉMA FULL-STACK -->
+          <div class="article-section fade-in">
+            <h2 class="article-section-title">Architecture full-stack</h2>
+            <div style="display:flex; flex-direction:column; gap:10px;">
+
+              <div style="background:#EDE9FE; border:2px solid #C4B5FD; border-radius:10px; padding:14px 20px; display:flex; align-items:center; gap:16px;">
+                <div style="font-size:1.6rem;">🖥️</div>
+                <div style="flex:1;">
+                  <div style="font-weight:700; font-size:0.9rem; color:var(--text);">Frontend React</div>
+                  <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:6px;">
+                    <span style="background:white; border:1px solid #C4B5FD; border-radius:5px; padding:3px 8px; font-size:0.72rem;">Recherche de vols</span>
+                    <span style="background:white; border:1px solid #C4B5FD; border-radius:5px; padding:3px 8px; font-size:0.72rem;">Création de compte</span>
+                    <span style="background:white; border:1px solid #C4B5FD; border-radius:5px; padding:3px 8px; font-size:0.72rem;">Réservation</span>
+                    <span style="background:white; border:1px solid #C4B5FD; border-radius:5px; padding:3px 8px; font-size:0.72rem;">Gestion du profil</span>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display:flex; justify-content:center; align-items:center; gap:8px; font-size:0.8rem; color:var(--text-secondary);">
+                <span style="font-size:1rem; color:#8B5CF6;">↕</span> API REST (HTTP/JSON)
+              </div>
+
+              <div style="background:#DBEAFE; border:2px solid #93C5FD; border-radius:10px; padding:14px 20px; display:flex; align-items:center; gap:16px;">
+                <div style="font-size:1.6rem;">☕</div>
+                <div style="flex:1;">
+                  <div style="font-weight:700; font-size:0.9rem; color:var(--text);">Backend Spring Boot</div>
+                  <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:6px;">
+                    <span style="background:white; border:1px solid #93C5FD; border-radius:5px; padding:3px 8px; font-size:0.72rem;">Endpoints REST</span>
+                    <span style="background:white; border:1px solid #93C5FD; border-radius:5px; padding:3px 8px; font-size:0.72rem;">Authentification</span>
+                    <span style="background:white; border:1px solid #93C5FD; border-radius:5px; padding:3px 8px; font-size:0.72rem;">Règles métier</span>
+                    <span style="background:white; border:1px solid #93C5FD; border-radius:5px; padding:3px 8px; font-size:0.72rem;">CRUD</span>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display:flex; justify-content:center; align-items:center; gap:8px; font-size:0.8rem; color:var(--text-secondary);">
+                <span style="font-size:1rem; color:#8B5CF6;">↕</span> JPA / SQL
+              </div>
+
+              <div style="background:#D1FAE5; border:2px solid #6EE7B7; border-radius:10px; padding:14px 20px; display:flex; align-items:center; gap:16px;">
+                <div style="font-size:1.6rem;">🗄️</div>
+                <div style="flex:1;">
+                  <div style="font-weight:700; font-size:0.9rem; color:var(--text);">Base de données PostgreSQL</div>
+                  <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:6px;">
+                    <span style="background:white; border:1px solid #6EE7B7; border-radius:5px; padding:3px 8px; font-size:0.72rem;">Utilisateurs</span>
+                    <span style="background:white; border:1px solid #6EE7B7; border-radius:5px; padding:3px 8px; font-size:0.72rem;">Vols & compagnies</span>
+                    <span style="background:white; border:1px solid #6EE7B7; border-radius:5px; padding:3px 8px; font-size:0.72rem;">Réservations</span>
+                    <span style="background:white; border:1px solid #6EE7B7; border-radius:5px; padding:3px 8px; font-size:0.72rem;">Disponibilités</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
 
           <div class="article-section fade-in fade-in-delay-1">
@@ -143,6 +198,22 @@
 
           <div class="article-section fade-in">
             <h2 class="article-section-title">Résultats</h2>
+
+            <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; margin-bottom:20px;">
+              <div style="background:var(--primary); color:white; border-radius:12px; padding:18px 14px; text-align:center;">
+                <div style="font-size:1.8rem; font-weight:800; margin-bottom:4px;">3</div>
+                <div style="font-size:0.75rem; opacity:0.9; line-height:1.4;">Technologies<br>intégrées</div>
+              </div>
+              <div style="background:#8B5CF6; color:white; border-radius:12px; padding:18px 14px; text-align:center;">
+                <div style="font-size:1.8rem; font-weight:800; margin-bottom:4px;">Full</div>
+                <div style="font-size:0.75rem; opacity:0.9; line-height:1.4;">Stack complet<br>Front + Back + BDD</div>
+              </div>
+              <div style="background:#059669; color:white; border-radius:12px; padding:18px 14px; text-align:center;">
+                <div style="font-size:1.8rem; font-weight:800; margin-bottom:4px;">✅</div>
+                <div style="font-size:0.75rem; opacity:0.9; line-height:1.4;">Application livrée<br>fonctionnelle</div>
+              </div>
+            </div>
+
             <div class="highlight-box success">
               <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin-bottom:10px;">Pour le projet</h4>
               <p>Pour le projet, nous avons livré une application fonctionnelle, stable et cohérente, répondant aux principales attentes : consultation de vols, création de comptes, réservations et gestion des données. Ce projet a permis de valider l'ensemble des compétences attendues dans notre cursus.</p>
@@ -181,7 +252,7 @@
             </div>
           </div>
           <div class="sidebar-card fade-in fade-in-delay-1" style="margin-top:20px;">
-            <a href="application-mobile.html" class="btn btn-outline" style="width:100%; justify-content:center; margin-bottom:10px;">← Application mobile</a>
+            <a href="application-mobile.html" class="btn btn-outline" style="width:100%; justify-content:center; margin-bottom:10px;">← Application d'envoi de colis</a>
             <a href="../realisations.html" class="btn btn-primary" style="width:100%; justify-content:center;">Toutes les réalisations ↑</a>
           </div>
         </div>
