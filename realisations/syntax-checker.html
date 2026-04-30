@@ -74,54 +74,6 @@
             <p>Dans le cadre de mon alternance chez Alstom, j'ai été chargée de développer un outil interne appelé Syntax Checker, destiné à automatiser la vérification de la conformité aux règles métiers de fichiers XML. Ces fichiers sont générés par l'équipe de designers à laquelle j'appartiens et contiennent la définition d'un ensemble de données et d'équations, destinées à être transformés en binaires, qui seront intégrés sur les systèmes embarqués dans les trains. Une erreur dans ces fichiers, si non détectée à la compilation, peut causer des incidents et des retards dans les phases de tests sur site.</p>
           </div>
 
-          <!-- SCHÉMA PIPELINE -->
-          <div class="article-section fade-in">
-            <h2 class="article-section-title">Résumé des étapes</h2>
-            <div style="overflow-x:auto; padding:8px 0;">
-              <div style="display:flex; align-items:stretch; gap:0; min-width:520px;">
-                <div style="display:flex; flex-direction:column; align-items:center; flex:1;">
-                  <div style="background:var(--primary); color:white; border-radius:10px; padding:14px 10px; text-align:center; width:100%; box-sizing:border-box;">
-                    <div style="font-size:1.4rem; margin-bottom:6px;">📄</div>
-                    <div style="font-weight:700; font-size:0.8rem;">Fichiers XML</div>
-                    <div style="font-size:0.7rem; opacity:0.85; margin-top:4px;">Générés par<br>les designers</div>
-                  </div>
-                </div>
-                <div style="display:flex; align-items:center; padding:0 6px; color:var(--primary); font-size:1.2rem; font-weight:700;">→</div>
-                <div style="display:flex; flex-direction:column; align-items:center; flex:1;">
-                  <div style="background:#EDE9FE; border-radius:10px; padding:14px 10px; text-align:center; width:100%; box-sizing:border-box; border:2px solid #C4B5FD;">
-                    <div style="font-size:1.4rem; margin-bottom:6px;">🔍</div>
-                    <div style="font-weight:700; font-size:0.8rem; color:var(--text);">Parsing</div>
-                    <div style="font-size:0.7rem; color:var(--text-secondary); margin-top:4px;">lxml<br>lecture XML</div>
-                  </div>
-                </div>
-                <div style="display:flex; align-items:center; padding:0 6px; color:var(--primary); font-size:1.2rem; font-weight:700;">→</div>
-                <div style="display:flex; flex-direction:column; align-items:center; flex:1;">
-                  <div style="background:#EDE9FE; border-radius:10px; padding:14px 10px; text-align:center; width:100%; box-sizing:border-box; border:2px solid #C4B5FD;">
-                    <div style="font-size:1.4rem; margin-bottom:6px;">📋</div>
-                    <div style="font-weight:700; font-size:0.8rem; color:var(--text);">Validation</div>
-                    <div style="font-size:0.7rem; color:var(--text-secondary); margin-top:4px;">Règles JSON<br>métier</div>
-                  </div>
-                </div>
-                <div style="display:flex; align-items:center; padding:0 6px; color:var(--primary); font-size:1.2rem; font-weight:700;">→</div>
-                <div style="display:flex; flex-direction:column; align-items:center; flex:1;">
-                  <div style="background:#FEE2E2; border-radius:10px; padding:14px 10px; text-align:center; width:100%; box-sizing:border-box; border:2px solid #FCA5A5;">
-                    <div style="font-size:1.4rem; margin-bottom:6px;">⚠️</div>
-                    <div style="font-weight:700; font-size:0.8rem; color:var(--text);">Détection</div>
-                    <div style="font-size:0.7rem; color:var(--text-secondary); margin-top:4px;">Erreurs &<br>anomalies</div>
-                  </div>
-                </div>
-                <div style="display:flex; align-items:center; padding:0 6px; color:var(--primary); font-size:1.2rem; font-weight:700;">→</div>
-                <div style="display:flex; flex-direction:column; align-items:center; flex:1;">
-                  <div style="background:#D1FAE5; border-radius:10px; padding:14px 10px; text-align:center; width:100%; box-sizing:border-box; border:2px solid #6EE7B7;">
-                    <div style="font-size:1.4rem; margin-bottom:6px;">📊</div>
-                    <div style="font-weight:700; font-size:0.8rem; color:var(--text);">Rapport</div>
-                    <div style="font-size:0.7rem; color:var(--text-secondary); margin-top:4px;">Clair &<br>exploitable</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <div class="article-section fade-in fade-in-delay-1">
             <h2 class="article-section-title">Objectif</h2>
             <p>L'objectif principal du développement de cet outil était de détecter automatiquement toutes les incohérences des fichiers xml par rapport au format interne utilisé par l'entreprise. En effet, ces fichiers produits par les designers, suivent des règles métier strictes et une structure spécifique, qui doivent être parfaitement respectées pour permettre la génération correcte des binaires embarqués. L'outil de compilation générant les binaires, ne permet pas de détecter tous les types d'erreurs, donc le but du Syntax Checker était d'identifier dès les premières étapes toute anomalie, qu'il s'agisse d'un non-respect des règles métier, d'une incohérence structurelle ou d'un élément mal défini, afin d'éviter que ces erreurs ne se propagent dans le processus de génération, bloquent la compilation ou provoquent des retards en phase de tests sur site.</p>
