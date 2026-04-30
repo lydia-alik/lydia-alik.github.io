@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <title>Gestion de BDD — Compétences — Lydia ALIK</title>
+  <title>Gestion de BDD Compétences Lydia ALIK</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
           <a href="../realisations/syntax-checker.html">Syntax Checker</a>
           <a href="../realisations/analyse-logs.html">Outil d'analyse de logs</a>
           <a href="../realisations/simulation-processus.html">Simulation d'exécution de modèles de procédés logiciels</a>
-          <a href="../realisations/application-mobile.html">Application mobile d'envoi de colis</a>
+          <a href="../realisations/application-mobile.html">SendPack</a>
           <a href="../realisations/reservation-avion.html">Site de réservation de billets d'avion</a>
         </div>
       </li>
@@ -61,7 +61,6 @@
       <div class="page-hero-breadcrumb"><a href="../index.html">Accueil</a> › <a href="../competences.html">Compétences</a> › Gestion de BDD</div>
       <div class="page-hero-tag">Compétence Technique</div>
       <h1>🗄️ Gestion de bases de données</h1>
-      <p class="page-hero-sub">Conception, modélisation et interrogation de bases de données, pour des applications concrètes.</p>
     </div>
   </div>
 
@@ -71,49 +70,44 @@
         <div>
           <div class="article-section fade-in">
             <h2 class="article-section-title">Ma définition</h2>
-            <p>La gestion de bases de données est une compétence essentielle pour tout développeur. Elle consiste à concevoir, structurer, interroger et optimiser des données afin de garantir la fiabilité, la performance et la sécurité des applications.</p>
-            <p>Dans un contexte professionnel moderne, cette compétence est indispensable pour assurer la cohérence des informations, maintenir la qualité des services et soutenir des systèmes logiciels qui reposent largement sur des données volumineuses et critiques.</p>
-            <div class="highlight-box">
-              <strong style="color:var(--primary);">Technologies maîtrisées :</strong> PostgreSQL · MariaDB · SQL avancé · Conception de schémas · Clés étrangères · Transactions
-            </div>
+            <p>La gestion de bases de données désigne l'ensemble des techniques permettant de stocker, organiser et manipuler des données de manière structurée. Elle repose sur l'utilisation de <strong>SGBD</strong> (Système de gestion de bases de données) comme <strong>MySQL</strong>, <strong>PostgreSQL</strong> ou <strong>MariaDB</strong> et de langages comme <strong>SQL</strong> pour interroger et modifier les données tout en garantissant leur cohérence et leur sécurité.</p>
           </div>
 
           <div class="article-section fade-in fade-in-delay-1">
             <h2 class="article-section-title">Mes éléments de preuve</h2>
             <div class="anecdote-card">
-              <p>J'ai mobilisé cette compétence dans deux projets significatifs. D'abord, lors du développement de <a href="../realisations/application-mobile.html" style="color:var(--primary); font-weight:600;">l'application mobile d'envoi de colis entre particuliers</a>, où j'ai conçu et administré une base MariaDB permettant de gérer les comptes utilisateurs, les trajets, les demandes et les échanges entre utilisateurs. J'ai dû structurer un schéma de données cohérent, assurer l'intégrité des informations et optimiser les requêtes pour garantir des interactions rapides depuis l'application mobile.</p>
+              <p>J'ai appris la gestion de bases de données tout au long de mon cursus, avec plusieurs enseignements sur les bases de données relationnelles ainsi que les langages <strong>SQL</strong> et <strong>PL/SQL</strong>. J'ai appris à concevoir des schémas relationnels, à écrire des requêtes complexes (<strong>jointures</strong>, <strong>agrégations</strong>, <strong>sous-requêtes</strong>) et à utiliser les <strong>transactions</strong> et les <strong>triggers</strong>.</p>
+              <p>J'ai mis ces compétences en pratique dans différents projets. Par exemple, dans mon application <a href="../realisations/application-mobile.html" style="color:var(--primary); font-weight:600;">SendPack</a>, j'ai utilisé un SGBD <strong>MariaDB</strong>. L'application interagissait avec la base via des requêtes SQL pour la gestion des utilisateurs (création de compte, authentification) ainsi que la gestion des annonces. J'ai également mis en place des mécanismes de sécurisation des mots de passe (hachage lors de l'insertion en base) afin de protéger les données sensibles.</p>
             </div>
             <div class="anecdote-card" style="margin-top:16px;">
-              <p>Plus tard, lors de mon projet académique de développement d'<a href="../realisations/reservation-avion.html" style="color:var(--primary); font-weight:600;">un site de réservation de billets d'avion</a>, j'ai travaillé avec PostgreSQL, en mettant en place une base plus complexe intégrant vols, utilisateurs, réservations et contraintes métiers. Ce projet m'a demandé une plus grande rigueur sur les relations entre tables, les clés étrangères, les transactions et la cohérence des données, notamment pour éviter les doublons ou les réservations incohérentes.</p>
+              <p>Dans le projet de <a href="../realisations/reservation-avion.html" style="color:var(--primary); font-weight:600;">site de réservation de billets d'avion</a>, j'ai utilisé le SGBD <strong>PostgreSQL</strong>. J'ai conçu le modèle relationnel complet <strong>(tables, clés primaires et étrangères, contraintes d'intégrité)</strong> et utilisé SQL pour la gestion des réservations. Chaque action utilisateur (création, modification ou annulation de réservation) entraînait une mise à jour dans la base de données.</p>
+              <p>Grâce à cette compétence, j'ai pu garantir dans mes projets la fiabilité des fonctionnalités critiques et une bonne exploitation des données.</p>
             </div>
-            <h4 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:700; color:var(--text); margin:20px 0 12px;">Preuve de compétence et valeur ajoutée</h4>
-            <p>Ces expériences démontrent ma capacité à concevoir des schémas relationnels pertinents, à écrire des requêtes SQL efficaces, et à adapter mes modèles en fonction des besoins métier. Grâce à cette compétence, j'ai pu garantir la fiabilité des fonctionnalités critiques (authentification, réservations, échanges d'informations), tout en offrant des performances satisfaisantes pour les utilisateurs.</p>
-            <p>Ma gestion des bases de données a apporté une valeur directe aux projets : elle a rendu les systèmes plus robustes, facilité l'évolution des fonctionnalités, et permis une meilleure exploitation des données par les utilisateurs ou les équipes enseignantes.</p>
           </div>
 
           <div class="article-section fade-in">
             <h2 class="article-section-title">Mon autocritique</h2>
             <h4 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:700; color:var(--text); margin:0 0 12px;">Niveau actuel, recul et marge de progression</h4>
-            <p>Je maîtrise aujourd'hui la conception de bases relationnelles, le SQL avancé, les clés de référence, les transactions, ainsi que la liaison entre une application logicielle et son système de stockage. J'ai également acquis de solides réflexes pour structurer une base de manière évolutive et éviter les problèmes d'intégrité.</p>
-            <p>Je souhaite cependant progresser davantage sur l'optimisation des performances (indexation avancée, tuning PostgreSQL), la modélisation de données à grande échelle, et les architectures plus poussées comme la réplication ou les bases orientées colonnes ou documents.</p>
+            <p>Aujourd'hui j'ai un bon niveau en gestion de bases de données. Je maîtrise la conception de bases relationnelles, le SQL avancé et la liaison entre une application et son système de stockage. J'ai également acquis de solides réflexes pour structurer une base de données de manière évolutive et éviter les problèmes d'intégrité.</p>
+            <p>Je souhaite cependant progresser davantage sur l'optimisation des performances (indexation avancée, tuning PostgreSQL), ainsi que la modélisation de données à grande échelle.</p>
             <div style="margin-top:16px;">
               <div style="display:flex; justify-content:space-between; font-size:0.85rem; font-weight:600; margin-bottom:8px;">
-                <span>Niveau actuel</span><span style="color:var(--primary);">85%</span>
+                <span>Niveau actuel</span><span style="color:var(--primary);">65%</span>
               </div>
-              <div class="skill-bar" style="height:10px;"><div class="skill-fill tech" data-pct="85"></div></div>
+              <div class="skill-bar" style="height:10px;"><div class="skill-fill tech" data-pct="65"></div></div>
             </div>
             <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin:20px 0 8px;">Vitesse d'acquisition</h4>
-            <p>J'ai acquis les bases des BDD relationnelles en cours, et je les ai consolidées rapidement en pratique sur des technologies différentes et dans des contextes projets concrets. Le fait de devoir concevoir le schéma de données avant de coder m'a obligée à réfléchir structurellement dès le début, ce qui a accéléré ma compréhension des enjeux.</p>
-            <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin:20px 0 8px;">Conseils pour moi-même et les autres</h4>
-            <p>Je recommande de commencer par bien concevoir le schéma de données avant d'écrire la moindre ligne de code : une base mal modélisée génère des problèmes à tous les niveaux de l'application. Il faut aussi apprendre à raisonner en termes de relations (clés étrangères, contraintes d'intégrité), et ne pas sous-estimer l'importance des transactions pour garantir la cohérence des données.</p>
+            <p>J'ai acquis les bases de la gestion des BDD relationnelles en cours, et je les ai consolidées progressivement en pratique sur mes projets.</p>
+            <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin:20px 0 8px;">Conseils pour moi-même et pour les autres</h4>
+            <p>Je recommande de commencer par bien concevoir le schéma de données avant de commencer à coder, cela oblige à réfléchir structurellement dès le début, ce qui améliore la compréhension des modèles et facilite la manipulation des données par la suite.</p>
           </div>
 
           <div class="article-section fade-in">
             <h2 class="article-section-title">Mon évolution dans cette compétence</h2>
             <h4 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:700; color:var(--text); margin:0 0 12px;">Place dans mon projet professionnel et objectif à moyen terme</h4>
-            <p>Cette compétence a une place importante dans mon parcours : quel que soit le domaine du développement ou de la data, les bases de données restent un pilier central. À moyen terme, je veux être capable de gérer des bases plus volumineuses, intervenir sur des problématiques de performance, et combiner SQL avec d'autres technologies data dans un contexte d'ingénierie logicielle ou d'analyse de données.</p>
-            <h4 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:700; color:var(--text); margin:20px 0 12px;">Formations et autoformations</h4>
-            <p>Je poursuis une amélioration continue via la documentation officielle, des tutoriels spécialisés et des exercices pratiques. Je prévois également de suivre des modules dédiés à PostgreSQL avancé et à l'optimisation SQL, afin de renforcer mes compétences et d'être plus à l'aise avec des environnements professionnels complexes.</p>
+            <p>Cette compétence a une place importante dans mon futur métier, les bases de données sont un élément central dans le domaine du développement logiciel. À moyen terme, mon objectif est de continuer à renforcer cette compétence et être capable de gérer des bases de données plus volumineuses.</p>
+            <h4 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:700; color:var(--text); margin:20px 0 12px;">Formations et autoformation</h4>
+            <p>Pour progresser dans cette compétence j'ai prévu de suivre la formation intitulée "Large-Scale Database Systems" disponible sur la plateforme <strong>Coursera</strong>, ça me permettra d'approfondir mes compétences sur les bases de données distribuées, la gestion de grands volumes de données et l'optimisation des performances.</p>
           </div>
         </div>
 
@@ -121,7 +115,7 @@
           <div class="sidebar-card fade-in">
             <div class="sidebar-card-title">Réalisations associées</div>
             <div class="sidebar-links">
-              <a href="../realisations/application-mobile.html" class="sidebar-link"><span>📦</span> Application mobile d'envoi de colis</a>
+              <a href="../realisations/application-mobile.html" class="sidebar-link"><span>📦</span> SendPack</a>
               <a href="../realisations/reservation-avion.html" class="sidebar-link"><span>✈️</span> Site de réservation de billets d'avion</a>
             </div>
           </div>
@@ -131,6 +125,10 @@
               <a href="python.html" class="sidebar-link"><span>🐍</span> Python</a>
               <a href="java.html" class="sidebar-link"><span>☕</span> Java</a>
               <a href="git.html" class="sidebar-link"><span>🔀</span> Git</a>
+              <a href="communication-orale.html" class="sidebar-link"><span>🗣️</span> Communication orale</a>
+              <a href="travail-equipe.html" class="sidebar-link"><span>👥</span> Travail en équipe</a>
+              <a href="perseverance.html" class="sidebar-link"><span>💪</span> Persévérance</a>
+              <a href="acceptation-feedback.html" class="sidebar-link"><span>🔄</span> Acceptation de feedback</a>
               <a href="organisation.html" class="sidebar-link"><span>📋</span> Organisation</a>
               <a href="adaptabilite.html" class="sidebar-link"><span>🌊</span> Adaptabilité</a>
             </div>
@@ -145,7 +143,7 @@
   <div class="container">
     <div class="footer-inner">
       <div class="footer-logo">Lydia <span>ALIK</span></div>
-      <p class="footer-text">Experte en ingénierie logicielle — Portfolio professionnel</p>
+      <p class="footer-text">Portfolio</p>
       <div class="footer-links">
         <a href="../index.html">Accueil</a><a href="../presentation.html">Présentation</a>
         <a href="../competences.html">Compétences</a><a href="../realisations.html">Réalisations</a>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <title>Application mobile d'envoi de colis — Lydia ALIK</title>
+  <title>SendPack Lydia ALIK</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
           <a href="syntax-checker.html">Syntax Checker</a>
           <a href="analyse-logs.html">Outil d'analyse de logs</a>
           <a href="simulation-processus.html">Simulation d'exécution de modèles de procédés logiciels</a>
-          <a href="application-mobile.html">Application mobile d'envoi de colis</a>
+          <a href="application-mobile.html">SendPack</a>
           <a href="reservation-avion.html">Site de réservation de billets d'avion</a>
         </div>
       </li>
@@ -60,13 +60,8 @@
   <div class="page-hero" style="background: linear-gradient(135deg, #FCE7F3, #F9FAFB);">
     <div class="container">
       <div class="page-hero-breadcrumb"><a href="../index.html">Accueil</a> › <a href="../realisations.html">Réalisations</a> › Application mobile</div>
-      <div class="page-hero-tag" style="background:var(--accent-light); color:#92400E;">Réalisation 04 — Projet de fin d'études Licence</div>
-      <h1>📦 Application mobile d'envoi de colis</h1>
-      <p class="page-hero-sub">Application Android inspirée du covoiturage, permettant l'envoi de colis entre particuliers.</p>
-      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:16px;">
-        <span class="tag tech">Java</span><span class="tag tech">Android Studio</span>
-        <span class="tag tech">MariaDB</span><span class="tag">Licence PFE</span>
-      </div>
+      <div class="page-hero-tag" style="background:var(--accent-light); color:#92400E;">Réalisation 04 Projet de fin d'études Licence</div>
+      <h1>📦 SendPack</h1>
     </div>
   </div>
 
@@ -76,156 +71,83 @@
         <div>
           <div class="article-section fade-in">
             <h2 class="article-section-title">Présentation</h2>
-            <p>Dans le cadre de mon projet de fin d'études en Licence Informatique, j'ai développé une application mobile permettant l'envoi de colis entre particuliers. Inspirée du principe du covoiturage, l'application permettait à un utilisateur effectuant un trajet d'emporter le colis d'un autre utilisateur, afin d'offrir une alternative plus flexible, rapide et économique aux services postaux traditionnels. Le développement s'est fait en Java sous Android Studio, avec une base de données MariaDB pour gérer les comptes utilisateurs, les trajets, les annonces et les interactions.</p>
-          </div>
-
-          <!-- SCHÉMA ARCHITECTURE CLIENT/SERVEUR -->
-          <div class="article-section fade-in">
-            <h2 class="article-section-title">Architecture de l'application</h2>
-            <div style="display:flex; gap:12px; align-items:stretch; flex-wrap:wrap;">
-
-              <div style="flex:1; min-width:140px; background:#FCE7F3; border:2px solid #F9A8D4; border-radius:10px; padding:16px; text-align:center;">
-                <div style="font-size:1.8rem; margin-bottom:8px;">📱</div>
-                <div style="font-weight:700; font-size:0.85rem; color:var(--text); margin-bottom:10px;">Application Android</div>
-                <div style="display:flex; flex-direction:column; gap:5px;">
-                  <span style="background:white; border-radius:5px; padding:4px 8px; font-size:0.72rem; color:var(--text);">👤 Comptes utilisateurs</span>
-                  <span style="background:white; border-radius:5px; padding:4px 8px; font-size:0.72rem; color:var(--text);">📦 Annonces colis</span>
-                  <span style="background:white; border-radius:5px; padding:4px 8px; font-size:0.72rem; color:var(--text);">💬 Messagerie</span>
--                </div>
-              </div>
-
-              <div style="display:flex; align-items:center; font-size:1.2rem; color:#EC4899; font-weight:700; flex-direction:column; justify-content:center; gap:4px;">
-                <span>↔</span>
-                <span style="font-size:0.65rem; color:var(--text-secondary);">HTTP</span>
-              </div>
-
-              <div style="flex:1; min-width:140px; background:#EDE9FE; border:2px solid #C4B5FD; border-radius:10px; padding:16px; text-align:center;">
-                <div style="font-size:1.8rem; margin-bottom:8px;">☕</div>
-                <div style="font-weight:700; font-size:0.85rem; color:var(--text); margin-bottom:10px;">Backend Java</div>
-                <div style="display:flex; flex-direction:column; gap:5px;">
-                  <span style="background:white; border-radius:5px; padding:4px 8px; font-size:0.72rem; color:var(--text);">🔐 Authentification</span>
-                  <span style="background:white; border-radius:5px; padding:4px 8px; font-size:0.72rem; color:var(--text);">📋 Logique métier</span>
-                  <span style="background:white; border-radius:5px; padding:4px 8px; font-size:0.72rem; color:var(--text);">🔗 Gestion sessions</span>
-                </div>
-              </div>
-
-              <div style="display:flex; align-items:center; font-size:1.2rem; color:#EC4899; font-weight:700; flex-direction:column; justify-content:center; gap:4px;">
-                <span>↔</span>
-                <span style="font-size:0.65rem; color:var(--text-secondary);">SQL</span>
-              </div>
-
-              <div style="flex:1; min-width:140px; background:#D1FAE5; border:2px solid #6EE7B7; border-radius:10px; padding:16px; text-align:center;">
-                <div style="font-size:1.8rem; margin-bottom:8px;">🗄️</div>
-                <div style="font-weight:700; font-size:0.85rem; color:var(--text); margin-bottom:10px;">Base de données</div>
-                <div style="display:flex; flex-direction:column; gap:5px;">
-                  <span style="background:white; border-radius:5px; padding:4px 8px; font-size:0.72rem; color:var(--text);">👥 Utilisateurs</span>
-                  <span style="background:white; border-radius:5px; padding:4px 8px; font-size:0.72rem; color:var(--text);">📦 Annonces</span>
-                  <span style="background:white; border-radius:5px; padding:4px 8px; font-size:0.72rem; color:var(--text);">🗺️ Trajets</span>
-                </div>
-                <div style="margin-top:8px; font-size:0.7rem; font-weight:600; color:#059669;">MariaDB</div>
-              </div>
-
-            </div>
+            <p>Dans le cadre de mon projet de fin d'études en Licence Informatique, j'ai développé une application mobile permettant l'envoi de colis entre particuliers. Inspirée du principe du covoiturage, l'application permettait à un utilisateur effectuant un trajet d'emporter le colis d'un autre utilisateur, afin d'offrir une alternative plus flexible, rapide et économique aux services postaux traditionnels.</p>
           </div>
 
           <div class="article-section fade-in fade-in-delay-1">
             <h2 class="article-section-title">Objectifs</h2>
-            <p>L'objectif principal était de concevoir une application complète couvrant l'ensemble du processus : création de compte, publication d'offres et de demandes ainsi qu'une messagerie interne. Le but était de proposer une solution fluide, ergonomique et fiable, répondant à un besoin concret d'optimisation des trajets existants.</p>
+            <p>L'objectif principal était de concevoir une application complète couvrant l'ensemble du processus : création de compte, publication d'offres et de demandes ainsi qu'une messagerie interne. Le but était de proposer une solution fluide, ergonomique et fiable, répondant à un besoin concret d'optimisation des trajets des utilisateurs.</p>
           </div>
 
           <div class="article-section fade-in">
             <h2 class="article-section-title">Contexte</h2>
-            <p>Ce projet s'inscrivait dans le cadre de la validation de ma licence en Ingénierie des systèmes d'informations et des logiciels, ça s'est déroulé pendant la période du COVID-19, ce qui a fortement influencé l'organisation : travail à distance, communication réduite, difficultés pour maintenir un rythme commun. Initialement prévu pour un binôme, j'ai finalement poursuivi le projet seule après l'abandon de ma partenaire pour raisons personnelles liées au contexte sanitaire.</p>
+            <p>Ce projet s'inscrivait dans le cadre de la validation de ma licence en Ingénierie des systèmes d'informations et des logiciels, ça s'est déroulé pendant la période du COVID-19, ce qui a fortement influencé l'organisation : travail à distance, communication réduite, difficultés pour maintenir un rythme commun. Initialement prévu pour un binôme, j'ai finalement poursuivi le projet toute seule après l'abandon de ma partenaire pour raisons personnelles liées au contexte sanitaire.</p>
           </div>
 
           <div class="article-section fade-in">
             <h2 class="article-section-title">Enjeux</h2>
-            <p>Les enjeux du projet étaient multiples : proposer une interface simple et intuitive, garantir la fiabilité et la sécurité des données, et offrir une expérience fluide malgré la diversité des fonctionnalités. Le risque technique résidait dans l'intégration complexe de modules comme la messagerie ou la gestion des sessions utilisateur. Pour l'université, l'enjeu était la validation du projet et sa capacité à illustrer nos compétences pratiques.</p>
+            <p>Les enjeux du projet étaient multiples : proposer une interface simple et intuitive, garantir la fiabilité et la sécurité des données, et offrir une expérience fluide malgré la diversité des fonctionnalités. L'enjeu était également la validation de ma licence et ma capacité à illustrer mes compétences pratiques.</p>
           </div>
 
           <div class="article-section fade-in">
             <h2 class="article-section-title">Risques</h2>
-            <ul>
-              <li>Le risque de non-respect des délais, amplifié par la situation exceptionnelle et la complexité technique</li>
-              <li>La nécessité de faire des choix et d'arbitrer entre certaines fonctionnalités secondaires pour garantir une livraison à temps</li>
-            </ul>
+            <p>Les principaux risques étaient liés à la complexité technique, notamment l'intégration de modules complexes tels que la messagerie interne. Egalement, il y avait le risque de non-respect des délais amplifié par la situation exceptionnelle, et la nécessité de faire des choix entre certaines fonctionnalités secondaires pour garantir une livraison à temps.</p>
           </div>
 
           <div class="article-section fade-in">
             <h2 class="article-section-title">Étapes du projet</h2>
-            <div style="display:flex; flex-direction:column; gap:16px;">
-              <div style="display:flex; gap:16px; align-items:flex-start;">
-                <div style="width:32px; height:32px; background:#EC4899; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">1</div>
-                <div><h4 style="color:var(--text); margin-bottom:6px;">Étude de l'existant</h4><p style="font-size:0.9rem;">Dans cette étape, nous avons commencé par analyser les applications similaires afin de comprendre les pratiques du marché et identifier les fonctionnalités essentielles. Ensuite, nous avons étudié les parcours utilisateurs pour mieux cerner les besoins et optimiser l’expérience utilisateur. Par la suite, nous avons rédigé les spécifications fonctionnelles détaillées, en définissant les différents écrans de l’application ainsi que les flux métier. Nous avons également précisé les interactions entre les utilisateurs et établi les règles de gestion à respecter. Enfin, nous avons conçu la structure de la base de données MariaDB afin d’assurer une organisation cohérente et efficace des données.</p></div>
+            <p>Dans un premier temps, j'ai réalisé une étude de l'existant en analysant différentes applications de covoiturage et d'envoi de colis, pour avoir des idées sur les fonctionnalités pertinentes que je peux intégrer dans mon projet.</p>
+            <p>J'ai ensuite entamé le développement de l'application mobile en utilisant le langage <strong>Java</strong> sous <strong>Android Studio</strong>. J'ai participé à la spécification des composants de l'application, notamment les différents écrans à développer et les interactions entre eux. De mon côté j'ai développé une partie de l'application, en particulier les écrans liés à la création de profil utilisateur et à la publication d'annonces d'envois de colis.</p>
+            <p>J'ai commencé par concevoir les interfaces utilisateurs en XML et implémenter la logique associée dans les activités Java (<strong>Activities</strong>). J'ai géré la navigation entre les écrans à l'aide d'<strong>Intent</strong>, ainsi que le cycle de vie des activités. J'ai également mis en place des formulaires avec des champs de saisie (<strong>EditText</strong>), des boutons et des validations afin de contrôler les données entrées par l'utilisateur avant leur traitement. J'ai géré les interactions utilisateur en implémentant des écouteurs d'événements (listeners), par exemple avec des méthodes de type <strong>onClickListener</strong> sur les boutons, afin de déclencher des actions spécifiques lors des interactions (soumission de formulaire, navigation entre écrans, enregistrement des données).</p>
+            <p>Lorsque l'utilisateur soumet un formulaire, les données sont envoyées et stockées dans la base de données sous <strong>MariaDB</strong>. J'ai pris en charge la conception du modèle de données, en définissant les tables, les relations et les contraintes, puis en les manipulant à l'aide de requêtes <strong>SQL</strong> pour assurer la mise à jour des informations. Concernant la sécurité, j'ai mis en place un mécanisme de hachage des mots de passe lors de l'inscription, afin de protéger les données sensibles des utilisateurs avant leur stockage en base.</p>
+            <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:6px;">Ci-dessous un exemple des interfaces que j'ai développé pour l'application.</p>
+            <div style="display:flex; gap:16px; flex-wrap:wrap; justify-content:center;">
+              <div style="text-align:center;">
+                <img src="../images/accueil-sendpack.png" alt="Écran d'accueil SendPack" style="max-width:220px; border-radius:12px; border:1px solid var(--border); box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                <p style="font-size:0.78rem; color:var(--text-secondary); margin-top:6px;">Écran d'accueil</p>
               </div>
-              <div style="display:flex; gap:16px; align-items:flex-start;">
-                <div style="width:32px; height:32px; background:#EC4899; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">2</div>
-                <div><h4 style="color:var(--text); margin-bottom:6px;">Conception et architecture</h4><p style="font-size:0.9rem;">Dans cette phase, nous avons commencé par organiser le découpage du projet afin de structurer efficacement le développement. Ensuite, nous avons défini les classes Java, les interactions réseau ainsi que les composants Android nécessaires. Par la suite, nous avons conçu la structure des tables de la base de données pour assurer une gestion cohérente des informations.</p></div>
+              <div style="text-align:center;">
+                <img src="../images/envoyer-colis.png" alt="Formulaire d'envoi de colis SendPack" style="max-width:220px; border-radius:12px; border:1px solid var(--border); box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                <p style="font-size:0.78rem; color:var(--text-secondary); margin-top:6px;">Formulaire d'envoi de colis</p>
               </div>
-              <div style="display:flex; gap:16px; align-items:flex-start;">
-                <div style="width:32px; height:32px; background:#EC4899; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">3</div>
-                <div><h4 style="color:var(--text); margin-bottom:6px;">Développement sous Android Studio</h4><p style="font-size:0.9rem;">Lors de cette étape, nous avons d’abord implémenté les interfaces utilisateur, puis la logique liée à la création et à l’authentification des comptes. Nous avons ensuite développé la gestion des annonces d’envoi et de transport, ainsi que la communication avec la base de données MariaDB. Enfin, nous avons intégré un module de messagerie interne pour permettre les échanges entre utilisateurs.</p></div>
+              <div style="text-align:center;">
+                <img src="../images/s'inscrire.png" alt="Formulaire de création d'un compte sur l'application" style="max-width:220px; border-radius:12px; border:1px solid var(--border); box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                <p style="font-size:0.78rem; color:var(--text-secondary); margin-top:6px;">Formulaire de création d'un compte</p>
               </div>
-              <div style="display:flex; gap:16px; align-items:flex-start;">
-                <div style="width:32px; height:32px; background:#EC4899; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">4</div>
-                <div><h4 style="color:var(--text); margin-bottom:6px;">Réorganisation solo</h4><p style="font-size:0.9rem;">Lorsque ma binôme a dû abandonner le projet, j'ai dû me réorganiser seule, revoir les priorités et adapter la charge de travail. Certaines fonctionnalités non essentielles ont été reportées afin d'assurer une livraison complète et fonctionnelle dans les délais, comme les filtres avancés de recherche ou les mécanismes de notation des utilisateurs.</p></div>
-              </div>
-              <div style="display:flex; gap:16px; align-items:flex-start;">
-                <div style="width:32px; height:32px; background:#EC4899; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">5</div>
-                <div><h4 style="color:var(--text); margin-bottom:6px;">Tests, corrections et rédaction de la documentation</h4><p style="font-size:0.9rem;">Enfin, dans cette dernière phase, j’ai vérifié le bon fonctionnement de l’ensemble des fonctionnalités. J’ai ensuite corrigé les anomalies identifiées, puis rédigé la documentation technique du projet afin d’assurer sa compréhension et sa maintenabilité.6</p></div>
-              </div>
-            </div>
+          </div>
+            <br>
+            <p>Tout au long du développement j'ai également utilisé <strong>Git</strong> pour le versionning du code et le suivi des modifications. Nous avons organisé notre travail sur des branches différentes de manière à avancer en parallèle sur les différentes fonctionnalités.</p>
+            <p>A mi-parcours, ma binôme a dû abandonner le projet pour des raisons personnelles liées au contexte sanitaire. J'ai donc repris l'ensemble du projet, j'ai dû revoir la planification avec l'enseignant encadrant, et j'ai fait le choix de recentrer le périmètre fonctionnel en supprimant certaines fonctionnalités, comme la messagerie interne, afin de pouvoir livrer une application fonctionnelle dans les délais impartis.</p>
           </div>
 
           <div class="article-section fade-in">
             <h2 class="article-section-title">Acteurs</h2>
-            <ul>
-              <li><strong>Moi-même :</strong> le projet impliquait initialement un binôme et un encadrant universitaire. Après le départ de ma binôme, mon rôle est devenu central : j'ai assumé seule la responsabilité technique et organisationnelle du projet</li>
-              <li><strong>Mon encadrant :</strong> malgré les difficultés liées au contexte sanitaire, mon encadrant a accompagné l'avancement en validant les choix techniques clés et en apportant des retours réguliers. Les échanges avec lui ont été essentiels pour garder une direction claire et anticiper les risques</li>
-            </ul>
+            <p>Le projet impliquait initialement moi, ma binôme et notre encadrant universitaire. Nous faisions des réunions à distance et échangions pour se répartir au fur et à mesure les tâches et suivre l'avancement. Après le départ de ma binôme, j'ai assumé seule la responsabilité technique et organisationnelle du projet.</p>
+            <p>Mon encadrant, malgré les difficultés liées au contexte sanitaire, a accompagné l'avancement en validant les choix techniques clés et en apportant des retours réguliers. Les échanges avec lui ont été essentiels pour garder une direction claire pour le déroulement du projet.</p>
           </div>
 
           <div class="article-section fade-in">
             <h2 class="article-section-title">Résultats</h2>
 
-            <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; margin-bottom:20px;">
-              <div style="background:var(--primary); color:white; border-radius:12px; padding:18px 14px; text-align:center;">
-                <div style="font-size:1.8rem; font-weight:800; margin-bottom:4px;">✅</div>
-                <div style="font-size:0.75rem; opacity:0.9; line-height:1.4;">Application<br>livrée</div>
-              </div>
-              <div style="background:#EC4899; color:white; border-radius:12px; padding:18px 14px; text-align:center;">
-                <div style="font-size:1.8rem; font-weight:800; margin-bottom:4px;">📱</div>
-                <div style="font-size:0.75rem; opacity:0.9; line-height:1.4;">Application mobile<br>complète</div>
-              </div>
-              <div style="background:#059669; color:white; border-radius:12px; padding:18px 14px; text-align:center;">
-                <div style="font-size:1.8rem; font-weight:800; margin-bottom:4px;">🎓</div>
-                <div style="font-size:0.75rem; opacity:0.9; line-height:1.4;">Licence<br>validée</div>
-              </div>
-            </div>
-
             <div class="highlight-box success">
-              <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin-bottom:10px;">Pour l'université</h4>
-              <p>Le projet a été mené à son terme. L'université a pu évaluer un projet complet et fonctionnel, démontrant une réelle maîtrise du développement Android et de l'intégration d'une base de données.</p>
-            </div>
-            <div class="highlight-box" style="margin-top:16px;">
-              <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin-bottom:10px;">Pour moi</h4>
-              <p>Pour moi, les résultats ont été très significatifs : développement de compétences avancées en developpement mobile, gestion d'un projet complexe en autonomie, renforcement de mes capacités d'organisation, d'adaptabilité et de persévérance.</p>
+              <p>Pour moi, les résultats ont été significatifs, j'ai pu mener à bien le développement de l'application et livrer une solution fonctionnelle qui m'a permis de valider ma Licence. J'ai pu également renforcer mes compétences en développement mobile, en java, en gestion de bases de données, ainsi que mes capacités d'organisation, d'adaptabilité et de persévérance.</p>
             </div>
           </div>
 
           <div class="article-section fade-in">
             <h2 class="article-section-title">Lendemains du projet</h2>
             <ul>
-              <li><strong>À court terme :</strong> ce projet a validé ma Licence et consolidé mon intérêt pour le développement d'applications mobiles et la gestion de projets</li>
-              <li><strong>À moyen terme :</strong> il a posé les bases de ma manière de travailler : structurer un projet, définir les priorités, arbitrer en situation d'urgence, anticiper les difficultés techniques</li>
-              <li><strong>Aujourd'hui encore :</strong> cette expérience influence ma façon d'aborder les projets professionnels, particulièrement ceux que je mène de manière autonome</li>
+              <li><strong>À court terme,</strong> ce projet m'a permit de valider ma Licence et consolidé mon intérêt pour le développement d'applications mobiles.</li>
+              <li><strong>À moyen terme,</strong> il a posé les bases de ma manière de travailler, ça m'a appris à structurer un projet, définir les priorités et anticiper les difficultés techniques.</li>
+              <li><strong>Aujourd'hui,</strong> cette expérience m'aide à mieux gérer les projets que je mène en autonomie, notamment en termes d'organisation, de priorisation des tâches et d'adaptation aux contraintes.</li>
             </ul>
           </div>
 
           <div class="article-section fade-in">
             <h2 class="article-section-title">Mon regard critique</h2>
-            <p>Avec le recul, ce projet a été l'une de mes expériences les plus formatrices. Travailler seule sur une application aussi complète m'a appris à être rigoureuse, à prévoir des marges d'erreur, à reconnaître l'importance de la priorisation et à m'adapter rapidement aux imprévus.</p>
-            <p>Ma valeur ajoutée a résidé dans ma capacité à mener le projet jusqu'à la fin, à produire une application cohérente et fonctionnelle malgré les contraintes, et à apprendre de manière accélérée plusieurs aspects du développement mobile. J'en retire des enseignements essentiels : bien définir l'essentiel, savoir renoncer à certaines fonctionnalités pour respecter les délais, communiquer efficacement avec l'encadrant, et maintenir un rythme constant même en situation difficile.</p>
+            <p>Avec le recul, ce projet a été l'une de mes expériences les plus formatrices. Travailler seule sur une application aussi complète m'a appris à être rigoureuse, à prévoir des marges d'erreur, à m'adapter rapidement aux imprévus.</p>
+            <p>Ma valeur ajoutée a résidé dans ma capacité à mener le projet jusqu'à la fin, à produire une application cohérente et fonctionnelle malgré les contraintes, et à apprendre de manière accélérée plusieurs aspects du développement mobile.</p>
+            <p>J'en retire des enseignements essentiels comme savoir renoncer à certaines fonctionnalités pour respecter les délais, ainsi que l'importance de communiquer efficacement et de maintenir un rythme constant même en situation difficile.</p>
           </div>
         </div>
 
@@ -238,6 +160,7 @@
               <a href="../competences/perseverance.html" class="sidebar-link"><span>💪</span> Persévérance</a>
               <a href="../competences/adaptabilite.html" class="sidebar-link"><span>🌊</span> Adaptabilité</a>
               <a href="../competences/organisation.html" class="sidebar-link"><span>📋</span> Organisation</a>
+              <a href="../competences/git.html" class="sidebar-link"><span>🔀</span> Git</a>
             </div>
           </div>
           <div class="sidebar-card fade-in fade-in-delay-1" style="margin-top:20px;">
@@ -254,7 +177,7 @@
   <div class="container">
     <div class="footer-inner">
       <div class="footer-logo">Lydia <span>ALIK</span></div>
-      <p class="footer-text">Experte en ingénierie logicielle — Portfolio professionnel</p>
+      <p class="footer-text">Portfolio</p>
       <div class="footer-links">
         <a href="../index.html">Accueil</a><a href="../presentation.html">Présentation</a>
         <a href="../competences.html">Compétences</a><a href="../realisations.html">Réalisations</a>

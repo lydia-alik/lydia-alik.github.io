@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <title>Outil d'analyse de logs — Lydia ALIK</title>
+  <title>Outil d'analyse de logs Lydia ALIK</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
           <a href="syntax-checker.html">Syntax Checker</a>
           <a href="analyse-logs.html">Outil d'analyse de logs</a>
           <a href="simulation-processus.html">Simulation d'exécution de modèles de procédés logiciels</a>
-          <a href="application-mobile.html">Application mobile d'envoi de colis</a>
+          <a href="application-mobile.html">SendPack</a>
           <a href="reservation-avion.html">Site de réservation de billets d'avion</a>
         </div>
       </li>
@@ -60,13 +60,8 @@
   <div class="page-hero" style="background: linear-gradient(135deg, #DBEAFE, #F9FAFB);">
     <div class="container">
       <div class="page-hero-breadcrumb"><a href="../index.html">Accueil</a> › <a href="../realisations.html">Réalisations</a> › Outil d'analyse de logs</div>
-      <div class="page-hero-tag" style="background:var(--accent-light); color:#92400E;">Réalisation 01 — Alternance Alstom</div>
+      <div class="page-hero-tag" style="background:var(--accent-light); color:#92400E;">Réalisation 01 Alternance Alstom</div>
       <h1>📊 Outil d'analyse de logs</h1>
-      <p class="page-hero-sub">Extraction, traitement et analyse automatisée de données issues des trains en exploitation, un outil Python complet pour fiabiliser et accélérer l'analyse d'évènements liés au domaine ferroviaire.</p>
-      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:16px;">
-        <span class="tag tech">Python</span><span class="tag tech">Pandas</span>
-        <span class="tag tech">Polars</span><span class="tag tech">Excel</span><span class="tag">Alstom</span>
-      </div>
     </div>
   </div>
 
@@ -74,19 +69,16 @@
     <div class="container">
       <div class="two-col">
         <div>
-          <!-- PRÉSENTATION -->
           <div class="article-section fade-in">
             <h2 class="article-section-title">Présentation</h2>
-            <p>Dans le cadre de mon alternance au sein du groupe Alstom, j'ai participé au développement d'un outil d'extraction, de traitement et d'analyse de données issues des trains en exploitation. Ce projet avait pour objectif de transformer des données brutes (logs) provenant des calculateurs embarqués en informations pertinentes permettant d'améliorer le suivi d'événements survenus lors d'utilisation des trains, d'identifier des incidents et de faciliter la prise de décision pour les équipes internes.</p>
+            <p>Dans le cadre de mon alternance chez Alstom, j'ai participé au développement d'un outil d'extraction, de traitement et d'analyse de données issues de trains en exploitation (logs). L'objectif de l'outil était de transformer des données brutes en informations pertinentes afin d'identifier, dans les logs, les occurrences des différents événements qu'on souhaite analyser ainsi que leur contexte, pour faciliter les éventuelles corrections et la prise de décision.</p>
           </div>
 
-          <!-- OBJECTIFS -->
           <!-- SCHÉMA PIPELINE -->
           <div class="article-section fade-in">
             <h2 class="article-section-title">Fonctionnement en un coup d'œil</h2>
             <div style="overflow-x:auto; padding:8px 0;">
               <div style="display:flex; align-items:stretch; gap:0; min-width:560px;">
-
                 <div style="display:flex; flex-direction:column; align-items:center; flex:1;">
                   <div style="background:var(--primary); color:white; border-radius:10px; padding:14px 10px; text-align:center; width:100%; box-sizing:border-box;">
                     <div style="font-size:1.4rem; margin-bottom:6px;">🚂</div>
@@ -94,19 +86,15 @@
                     <div style="font-size:0.7rem; opacity:0.85; margin-top:4px;">Calculateurs<br>embarqués</div>
                   </div>
                 </div>
-
                 <div style="display:flex; align-items:center; padding:0 6px; color:var(--primary); font-size:1.2rem; font-weight:700;">→</div>
-
                 <div style="display:flex; flex-direction:column; align-items:center; flex:1;">
                   <div style="background:#EDE9FE; border-radius:10px; padding:14px 10px; text-align:center; width:100%; box-sizing:border-box; border:2px solid #C4B5FD;">
                     <div style="font-size:1.4rem; margin-bottom:6px;">📥</div>
                     <div style="font-weight:700; font-size:0.8rem; color:var(--text);">Extraction</div>
-                    <div style="font-size:0.7rem; color:var(--text-secondary); margin-top:4px;">Lecture &<br>nettoyage</div>
+                    <div style="font-size:0.7rem; color:var(--text-secondary); margin-top:4px;">Lecture</div>
                   </div>
                 </div>
-
                 <div style="display:flex; align-items:center; padding:0 6px; color:var(--primary); font-size:1.2rem; font-weight:700;">→</div>
-
                 <div style="display:flex; flex-direction:column; align-items:center; flex:1;">
                   <div style="background:#EDE9FE; border-radius:10px; padding:14px 10px; text-align:center; width:100%; box-sizing:border-box; border:2px solid #C4B5FD;">
                     <div style="font-size:1.4rem; margin-bottom:6px;">⚙️</div>
@@ -114,9 +102,7 @@
                     <div style="font-size:0.7rem; color:var(--text-secondary); margin-top:4px;">Pandas · Polars<br>DataFrames</div>
                   </div>
                 </div>
-
                 <div style="display:flex; align-items:center; padding:0 6px; color:var(--primary); font-size:1.2rem; font-weight:700;">→</div>
-
                 <div style="display:flex; flex-direction:column; align-items:center; flex:1;">
                   <div style="background:#FEE2E2; border-radius:10px; padding:14px 10px; text-align:center; width:100%; box-sizing:border-box; border:2px solid #FCA5A5;">
                     <div style="font-size:1.4rem; margin-bottom:6px;">🔎</div>
@@ -124,143 +110,103 @@
                     <div style="font-size:0.7rem; color:var(--text-secondary); margin-top:4px;">Détection<br>d'anomalies</div>
                   </div>
                 </div>
-
                 <div style="display:flex; align-items:center; padding:0 6px; color:var(--primary); font-size:1.2rem; font-weight:700;">→</div>
-
                 <div style="display:flex; flex-direction:column; align-items:center; flex:1;">
                   <div style="background:#D1FAE5; border-radius:10px; padding:14px 10px; text-align:center; width:100%; box-sizing:border-box; border:2px solid #6EE7B7;">
                     <div style="font-size:1.4rem; margin-bottom:6px;">📊</div>
                     <div style="font-weight:700; font-size:0.8rem; color:var(--text);">Rapport Excel</div>
-                    <div style="font-size:0.7rem; color:var(--text-secondary); margin-top:4px;">Exploitable par<br>toutes les équipes</div>
+                    <div style="font-size:0.7rem; color:var(--text-secondary); margin-top:4px;">Exploitable par<br>l'équipe</div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
 
           <div class="article-section fade-in fade-in-delay-1">
             <h2 class="article-section-title">Objectifs</h2>
-            <p>L'objectif principal du projet était d'automatiser un processus d'analyse auparavant réalisé manuellement afin de rendre les enregistrements issus des trains plus accessibles et exploitables pour les équipes métier. Il s'agissait également de permettre une meilleure compréhension des incidents et anomalies tout en produisant des rapports clairs, standardisés et faciles à interpréter.</p>
+            <p>L'objectif principal du développement de cet outil était d'automatiser un processus d'analyse qui auparavant était fait manuellement, avec des outils permettant des analyses ponctuelles sur un fichier de données à la fois. Le but était également de produire des rapports clairs et faciles à interpréter par les équipes métier, pour mieux comprendre le contexte autour des événements détectés comme des freinages d'urgences, des alarmes déclenchées…etc</p>
           </div>
 
-          <!-- CONTEXTE -->
           <div class="article-section fade-in">
             <h2 class="article-section-title">Contexte</h2>
-            <p>Alstom collecte de grands volumes de données provenant des calculateurs embarqués. Leur interprétation nécessite un traitement structuré et des outils adaptés. Avant ce projet, une partie des analyses était réalisée manuellement, ce qui mobilisait du temps et pouvait limiter la profondeur de l'analyse. Le projet s'inscrivait donc dans une démarche d'optimisation continue visant à développer des outils plus automatisés, plus lisibles et mieux adaptés pour accompagner les équipes dans leur analyse quotidienne, tout en leur permettant de se concentrer sur des tâches à plus forte valeur ajoutée.</p>
+            <p>Alstom collecte de grands volumes de données provenant des calculateurs embarqués sur les trains. Pour les interpréter, un traitement structuré et des outils adaptés sont nécessaires. Avant la création de l'outil d'analyse de logs, les analyses étaient faites manuellement par l'équipe, qui ne pouvait ouvrir qu'un seul fichier de données à la fois pour en étudier le contenu. Ces tâches devenaient vite chronophage et la profondeur des analyses pouvait être limitée. Le projet s'inscrivait donc dans une démarche d'optimisation, visant à développer des outils automatisés et adaptés pour faciliter à l'équipe ce travail d'analyse et leur permettre de se concentrer sur des tâches à plus forte valeur ajoutée.</p>
           </div>
 
-          <!-- ENJEUX -->
           <div class="article-section fade-in">
             <h2 class="article-section-title">Enjeux</h2>
-            <ul>
-              <li><strong>Technique :</strong> fiabiliser l'analyse des événements et contextualiser les données</li>
-              <li><strong>Opérationnel :</strong> contribuer à améliorer la qualité de service pour les passagers</li>
-              <li><strong>Humain :</strong> faciliter les échanges entre les équipes techniques et métiers grâce à des livrables compréhensibles et adaptés aux besoins de chacun</li>
-            </ul>
+            <p>Sur le plan technique l'enjeu était de fiabiliser l'analyse des évènements détectés et de bien contextualiser les données. Il fallait également fournir des livrables compréhensibles et adaptés au besoin, afin de faciliter l'échange avec les équipes métier. D'un point de vue opérationnel, le projet devait contribuer à améliorer la qualité de service pour les passagers.</p>
           </div>
 
-          <!-- RISQUES -->
           <div class="article-section fade-in">
             <h2 class="article-section-title">Risques</h2>
-            <ul>
-              <li>Les erreurs liées à l'analyse manuelle, la perte de temps et les retards potentiels dans la détection d'incidents importants</li>
-              <li>Comprendre des systèmes techniques complexes, maîtriser une volumétrie de données importante</li>
-              <li>Produire un outil utilisable par plusieurs équipes aux besoins différents</li>
-            </ul>
+            <p>Pour ma part, le principal risque était une mauvaise compréhension des règles métier, pouvant conduire à la génération de résultats incorrects. Pour l'entreprise, le risque était que l'adaptation de l'outil à chaque type d'évènement que l'on souhaite analyser entraîne un temps de mise en œuvre plus important que prévu.</p>
           </div>
 
-          <!-- ÉTAPES -->
           <div class="article-section fade-in">
             <h2 class="article-section-title">Étapes du projet</h2>
             <div style="display:flex; flex-direction:column; gap:16px;">
               <div style="display:flex; gap:16px; align-items:flex-start;">
                 <div style="width:32px; height:32px; background:var(--primary); color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">1</div>
                 <div>
-                  <h4 style="color:var(--text); margin-bottom:6px;">Compréhension des besoins et cadrage fonctionnel</h4>
-                  <p style="font-size:0.9rem;">La première étape du projet a consisté à comprendre précisément les attentes des équipes métier. Des échanges réguliers ont permis d'identifier les besoins réels en matière d'analyse de données, les types d'événements à surveiller, les indicateurs prioritaires ainsi que le niveau de détail attendu dans les rapports. J'ai également analysé les formats de données brutes issus des calculateurs embarqués, ce qui m'a permis de comprendre les logiques métiers associées et de définir les futures règles d'analyse.</p>
+                  <h4 style="color:var(--text); margin-bottom:6px;">Compréhension du besoin et cadrage</h4>
+                  <p style="font-size:0.9rem;">La première étape du projet a consisté à comprendre précisément les attentes de l'équipe métier. Pour cela je participais à des réunions de cadrage et nous avions des échanges réguliers afin d'identifier au mieux les besoins réels, les types d'événements à remonter, les informations utiles à l'analyse et au contexte, le niveau de détail attendu dans les rapports, et que je puisse comprendre la logique métier associées, pour définir les règles de détection d'évènements. J'ai ensuite étudié la base de l'outil qui était déjà en place, afin de mieux comprendre comment implémenter le besoin de mon équipe.</p>
                 </div>
               </div>
               <div style="display:flex; gap:16px; align-items:flex-start;">
                 <div style="width:32px; height:32px; background:var(--primary); color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">2</div>
                 <div>
-                  <h4 style="color:var(--text); margin-bottom:6px;">Développement de l'outil d'analyse</h4>
-                  <p style="font-size:0.9rem;">J'ai ensuite conçu et développé un ensemble de scripts Python constituant un outil complet capable d'assurer l'extraction, le traitement et l'analyse des données. Plusieurs modules ont été mis en place pour automatiser chaque étape : l'extraction des données brutes, leur nettoyage et structuration à l'aide de Pandas et Polars, la détection de transitions et d'anomalies, ainsi que la génération de rapports Excel intégrant les résultats de l'analyse. L'outil permet également de contextualiser les phénomènes observés pour faciliter leur interprétation. L'ensemble du processus est entièrement automatisé afin d'éviter toute intervention manuelle.</p>
+                  <h4 style="color:var(--text); margin-bottom:6px;">Développement de l'outil</h4>
+                  <p style="font-size:0.9rem;">Une fois la phase de cadrage terminée, j'ai pu commencer le développement. Pour chaque type d'événements à analyser, un ensemble de variables à extraire depuis les fichiers de données m'était fourni par l'équipe, j'ai donc conçu des scripts <strong>Python</strong> avec une partie spécifique aux variables à extraire depuis les logs, une partie fonctions où j'implémente la logique métier permettant la détection de l'événement, ainsi qu'une partie fonctions de calcul permettant de réaliser des calculs à partir des variables extraites pour enrichir le rapport et donner plus de contexte à l'événement détecté.</p>
+                  <p style="font-size:0.9rem;">La première étape consistait à extraire les données et à les transformer en fichiers <strong>Parquet</strong> concaténés. Ensuite, j'utilisais les bibliothèques <strong>pandas</strong> et <strong>polars</strong> pour structurer les données en <strong>DataFrames</strong> et les nettoyer. À l'aide de fonctions comme <strong>df.filter()</strong>, <strong>df.with_columns()</strong>, <strong>pl.col()</strong> ou encore <strong>df.shift()</strong>, je pouvais filtrer les données, manipuler les colonnes et détecter les transitions liées aux événements recherchés par exemple le déclenchement d'un certain type d'alarmes, ensuite selon le besoin de l'équipe je rajoutais des fonctions supplémentaires pour appliquer des calculs sur les données récupérées, et générer de nouvelles informations utiles, pour mieux comprendre le contexte autour de l'évènement, par exemple calculer la durée de déclenchement de cette alarme. Je créais alors un nouveau <strong>DataFrame</strong> filtré, contenant uniquement les lignes relatives aux évènements souhaités, ainsi que le contexte qui leur est associé.</p>
                 </div>
               </div>
               <div style="display:flex; gap:16px; align-items:flex-start;">
                 <div style="width:32px; height:32px; background:var(--primary); color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">3</div>
                 <div>
-                  <h4 style="color:var(--text); margin-bottom:6px;">Génération et diffusion des rapports</h4>
-                  <p style="font-size:0.9rem;">Une fois les données analysées, j'ai fait en sorte que l'outil génère des rapports clairs, standardisés et exploitables. Ces documents sont destinés aux équipes techniques comme aux équipes métiers. Selon les besoins spécifiques des équipes, j'ai également ajouté des calculs supplémentaires afin de compléter l'analyse et de faciliter la prise de décision.</p>
+                  <h4 style="color:var(--text); margin-bottom:6px;">Génération du rapport</h4>
+                  <p style="font-size:0.9rem;">Une fois les données filtrées, En dernière étape je transformais le <strong>dataframe</strong> final en fichier <strong>excel</strong> qui sera le rapport livré à l'équipe.</p>
                 </div>
               </div>
               <div style="display:flex; gap:16px; align-items:flex-start;">
                 <div style="width:32px; height:32px; background:var(--primary); color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">4</div>
                 <div>
-                  <h4 style="color:var(--text); margin-bottom:6px;">Phase de vérification et contrôle qualité</h4>
-                  <p style="font-size:0.9rem;">Une phase de vérification a ensuite été réalisée pour m'assurer de la fiabilité des résultats. J'ai procédé à des contrôles manuels sur un échantillon de cas, en comparant les analyses générées automatiquement avec les anciens traitements manuels. Cette étape a permis de valider la pertinence des calculs, des transitions détectées et des indicateurs produits. Les éventuels écarts ont été corrigés pour améliorer la précision de l'outil.</p>
+                  <h4 style="color:var(--text); margin-bottom:6px;">Vérification et contrôle</h4>
+                  <p style="font-size:0.9rem;">Enfin, pour m'assurer de la fiabilité des résultats, j'ai procédé à des contrôles manuels sur un échantillon de cas, en comparant les résultats générés automatiquement avec les anciens traitements manuels. Cette étape a permis de valider la pertinence, des transitions détectées, des calculs et des informations remontées. Les éventuels écarts ont été corrigés pour améliorer la précision de l'outil.</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- ACTEURS -->
           <div class="article-section fade-in">
             <h2 class="article-section-title">Acteurs</h2>
-            <ul>
-              <li><strong>Moi-même :</strong> rôle de développeuse, d'analyste et de facilitatrice entre les équipes et pour traduction des besoins métiers en solutions techniques</li>
-              <li><strong>L'équipe technique :</strong> validation des interprétations et des règles d'analyse</li>
-              <li><strong>L'équipe métier :</strong> contribution à définir les besoins et cible des rapports générés</li>
-              <li><strong>Mon tuteur :</strong> accompagnement sur les aspects méthodologiques et validation des différents livrables</li>
-            </ul>
+            <p>Au cours de ce projet j'ai travaillé en lien étroit avec l'équipe métier qui a contribué à définir les besoins et était la cible des rapports générés par l'outil. Mon manager m'a accompagné sur les aspects méthodologiques et a validé les différents livrables. Pour ma part, j'ai joué le rôle de développeur et d'analyste en traduisant les besoins métiers en solutions techniques et résultats utiles.</p>
           </div>
 
-          <!-- RÉSULTATS -->
           <div class="article-section fade-in">
             <h2 class="article-section-title">Résultats</h2>
-
-            <!-- CARTES CHIFFRES CLÉS -->
-            <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; margin-bottom:20px;">
-              <div style="background:var(--primary); color:white; border-radius:12px; padding:18px 14px; text-align:center;">
-                <div style="font-size:1.8rem; font-weight:800; margin-bottom:4px;">100%</div>
-                <div style="font-size:0.75rem; opacity:0.9; line-height:1.4;">Automatisation<br>du processus</div>
-              </div>
-              <div style="background:#059669; color:white; border-radius:12px; padding:18px 14px; text-align:center;">
-                <div style="font-size:1.8rem; font-weight:800; margin-bottom:4px;">0</div>
-                <div style="font-size:0.75rem; opacity:0.9; line-height:1.4;">Intervention<br>manuelle requise</div>
-              </div>
-              <div style="background:#2563EB; color:white; border-radius:12px; padding:18px 14px; text-align:center;">
-                <div style="font-size:1.8rem; font-weight:800; margin-bottom:4px;">2</div>
-                <div style="font-size:0.75rem; opacity:0.9; line-height:1.4;">Équipes utilisatrices<br>(tech & métier)</div>
-              </div>
-            </div>
-
             <div class="highlight-box success">
               <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin-bottom:10px;">Pour l'entreprise</h4>
-              <p>Le projet a permis d'automatiser une tâche répétitive et chronophage, ce qui a conduit à une réduction significative du temps de traitement et du risque d'erreur humaine. L'outil est capable de traiter un volume important de données et d'offrir une meilleure compréhension des incidents grâce à des informations contextualisées. Il est également réutilisable et améliorable, ce qui lui confère une valeur ajoutée durable pour d'autres projets internes.</p>
+              <p>L'outil d'analyse de logs a permis d'automatiser une tâche répétitive et chronophage, ce qui a conduit à une réduction significative du temps de traitement et du risque d'erreurs humaines. Il apporte également une vision complémentaire au retour des clients ou des équipes de tests sur les incidents survenus, étant capable de traiter un volume important de données et d'en extraire des informations contextualisées sur chaque évènement qu'on veut analyser. Il est également réutilisable et améliorable, ce qui lui confère une valeur ajoutée durable pour d'autres projets internes.</p>
             </div>
             <div class="highlight-box" style="margin-top:16px;">
               <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin-bottom:10px;">Pour moi</h4>
-              <p>Ce projet m'a permis de renforcer mes compétences techniques en Python, Pandas, Polars, visualisation et automatisation. J'ai acquis une meilleure compréhension des enjeux liés au système ferroviaire et aux systèmes embarqués. Il a également développé mes capacités en communication, en vulgarisation technique et de travail en équipe.</p>
+              <p>Ce projet m'a permis de renforcer mes compétences techniques en <a href="../competences/python.html" style="color:var(--primary); font-weight:600;">Python</a>, en analyse et visualisation des données. J'ai acquis une meilleure compréhension des enjeux liés au système ferroviaire. j'ai également développé mes capacités en communication, en vulgarisation technique et de travail en équipe.</p>
             </div>
           </div>
 
-          <!-- LENDEMAINS -->
           <div class="article-section fade-in">
             <h2 class="article-section-title">Lendemains du projet</h2>
             <ul>
-              <li><strong>Futur immédiat :</strong> l'outil pourra être amélioré par l'ajout de nouvelles règles de détection d'évènements. Il pourra également être intégré dans un pipeline d'analyse plus global utilisé au sein de l'entreprise.</li>
-              <li><strong>À moyen terme :</strong> l'ambition est d'exploiter les données pour développer des modèles de machine learning visant à détecter automatiquement des anomalies, prédire certains incidents ou analyser des tendances. Cela ouvrira la voie à des outils d'aide à la décision encore plus performants, notamment pour la maintenance prédictive.</li>
-              <li><strong>Aujourd'hui :</strong> le projet sert de référence interne pour automatiser d'autres analyses similaires. Les équipes continuent d'utiliser les résultats produits pour améliorer la qualité de service et mieux comprendre les incidents.</li>
+              <li><strong>Futur immédiat :</strong> L'outil pourra être amélioré par l'ajout de nouvelles règles de détection d'évènements. Il pourra également être utilisé par d'autres équipes au sein de l'entreprise.</li>
+              <li><strong>À moyen terme :</strong> L'ambition à moyen terme est d'exploiter les données pour développer des modèles de <strong>machine learning</strong> visant à détecter automatiquement des évènements, prédire certains incidents ou analyser des tendances. Cela ouvrira la voie à des outils d'aide à la décision encore plus performants, notamment pour la maintenance prédictive.</li>
+              <li><strong>Aujourd'hui :</strong> Le projet sert de référence interne pour automatiser d'autres analyses similaires. Les équipes continuent d'utiliser les résultats produits pour apporter des corrections dans le système si besoin et améliorer la qualité de service.</li>
             </ul>
           </div>
 
-          <!-- REGARD CRITIQUE -->
           <div class="article-section fade-in">
             <h2 class="article-section-title">Mon regard critique</h2>
-            <p>Ce projet a été particulièrement formateur car il m'a permis d'assumer un rôle transversal mêlant développement, analyse de données et communication. Ma valeur ajoutée réside dans ma capacité à rendre intelligibles des données techniques complexes, à automatiser une tâche jusque-là manuelle et à proposer des livrables clairs adaptés à différents interlocuteurs.</p>
-            <p>Les principaux enseignements que j'en retire concernent l'importance de la communication entre équipes, la nécessité de structurer correctement les données avant toute analyse, la valeur de l'automatisation pour fiabiliser les processus, et la satisfaction de contribuer à un projet ayant un impact réel sur le confort et la sécurité des passagers.</p>
+            <p>Ce projet a été particulièrement formateur car il m'a permis de travailler à la fois sur le développement, l'analyse de données et ma communication. Ma valeur ajoutée a résidé dans ma capacité à fournir rapidement un outil fonctionnel permettant de traduire des données techniques en informations utiles, à automatiser une tâche jusque-là manuelle et à proposer des livrables clairs adaptés à différents interlocuteurs.</p>
+            <p>Les principaux enseignements que j'en retiens concernent l'importance de la communication entre équipes, techniquement, la valeur de l'automatisation pour améliorer un processus, et enfin je garde une satisfaction d'avoir contribuer à un projet ayant un impact réel sur le confort et la sécurité des passagers.</p>
           </div>
         </div>
 
@@ -273,15 +219,7 @@
               <a href="../competences/travail-equipe.html" class="sidebar-link"><span>👥</span> Travail en équipe</a>
               <a href="../competences/adaptabilite.html" class="sidebar-link"><span>🌊</span> Adaptabilité</a>
               <a href="../competences/acceptation-feedback.html" class="sidebar-link"><span>🔄</span> Acceptation de feedback</a>
-            </div>
-          </div>
-          <div class="sidebar-card fade-in fade-in-delay-1" style="margin-top:20px;">
-            <div class="sidebar-card-title">Autres réalisations</div>
-            <div class="sidebar-links">
-              <a href="syntax-checker.html" class="sidebar-link"><span>🔍</span> Syntax Checker</a>
-              <a href="simulation-processus.html" class="sidebar-link"><span>⚙️</span> Simulation d'exécution de modèles de procédés logiciels</a>
-              <a href="application-mobile.html" class="sidebar-link"><span>📦</span> Application mobile</a>
-              <a href="reservation-avion.html" class="sidebar-link"><span>✈️</span> Site de réservation de billets d'avion</a>
+              <a href="../competences/git.html" class="sidebar-link"><span>🔀</span> Git</a>
             </div>
           </div>
           <div class="sidebar-card fade-in fade-in-delay-2" style="margin-top:20px;">
@@ -298,7 +236,7 @@
   <div class="container">
     <div class="footer-inner">
       <div class="footer-logo">Lydia <span>ALIK</span></div>
-      <p class="footer-text">Experte en ingénierie logicielle — Portfolio professionnel</p>
+      <p class="footer-text">Portfolio</p>
       <div class="footer-links">
         <a href="../index.html">Accueil</a><a href="../presentation.html">Présentation</a>
         <a href="../competences.html">Compétences</a><a href="../realisations.html">Réalisations</a>

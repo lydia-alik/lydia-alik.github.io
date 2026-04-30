@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <title>Site de réservation de billets d'avion — Lydia ALIK</title>
+  <title>Site de réservation de billets d'avion Lydia ALIK</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
           <a href="syntax-checker.html">Syntax Checker</a>
           <a href="analyse-logs.html">Outil d'analyse de logs</a>
           <a href="simulation-processus.html">Simulation d'exécution de modèles de procédés logiciels</a>
-          <a href="application-mobile.html">Application mobile d'envoi de colis</a>
+          <a href="application-mobile.html">SendPack</a>
           <a href="reservation-avion.html">Site de réservation de billets d'avion</a>
         </div>
       </li>
@@ -60,13 +60,8 @@
   <div class="page-hero" style="background: linear-gradient(135deg, #EDE9FE, #F9FAFB);">
     <div class="container">
       <div class="page-hero-breadcrumb"><a href="../index.html">Accueil</a> › <a href="../realisations.html">Réalisations</a> › Site de réservation de billets d'avion</div>
-      <div class="page-hero-tag" style="background:var(--accent-light); color:#92400E;">Réalisation 05 — Projet académique</div>
+      <div class="page-hero-tag" style="background:var(--accent-light); color:#92400E;">Réalisation 05 Projet académique</div>
       <h1>✈️ Site de réservation de billets d'avion</h1>
-      <p class="page-hero-sub">Plateforme web complète développée avec Spring Boot, React et PostgreSQL, une application full-stack moderne simulant un vrai service de réservation de billets d'avion.</p>
-      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:16px;">
-        <span class="tag tech">Spring Boot</span><span class="tag tech">React</span>
-        <span class="tag tech">PostgreSQL</span><span class="tag tech">API REST</span><span class="tag tech">Git</span>
-      </div>
     </div>
   </div>
 
@@ -76,8 +71,8 @@
         <div>
           <div class="article-section fade-in">
             <h2 class="article-section-title">Présentation</h2>
-            <p>Dans le cadre d'un projet d'école réalisé en binôme, j'ai participé au développement d'une plateforme web de réservation de billets d'avion. L'objectif était de concevoir une application complète permettant aux utilisateurs de consulter des vols, rechercher des destinations, créer un compte, effectuer des réservations et gérer leurs informations.</p>
-            <p>Le projet reposait sur une architecture moderne utilisant Java Spring Boot pour le backend, React pour le frontend, et une base de données relationnelle PostgreSQL pour la gestion des informations (utilisateurs, vols, réservations…). Ce projet avait pour vocation de simuler un service complet comparable à une plateforme de réservation réelle, tout en respectant des contraintes de cohérence, de sécurité et de fluidité d'expérience utilisateur.</p>
+            <p>Dans le cadre d'un projet d'école, en Master 1 de ma formation à l'esiea, j'ai participé au développement d'une plateforme web de réservation de billets d'avion. L'objectif était de concevoir une application complète permettant aux utilisateurs de consulter des vols, rechercher des destinations, créer un compte, effectuer des réservations et gérer leurs informations.</p>
+            <p>Le but du projet était de simuler un service complet, comparable à une plateforme de réservation réelle.</p>
           </div>
 
           <!-- SCHÉMA FULL-STACK -->
@@ -137,64 +132,38 @@
 
           <div class="article-section fade-in fade-in-delay-1">
             <h2 class="article-section-title">Objectifs</h2>
-            <ul>
-              <li>Concevoir une plateforme ergonomique permettant aux utilisateurs de consulter facilement les vols disponibles et d'effectuer leurs réservations</li>
-              <li>Mettre en place une architecture fiable reposant sur une séparation claire entre le front-end et le back-end, afin d'assurer la maintenabilité et l'évolution future de l'application</li>
-              <li>Gérer l'ensemble du cycle utilisateur : création de compte, authentification, recherche de vols, sélection et validation de la réservation</li>
-              <li>Garantir l'intégrité et la cohérence des données stockées dans la base PostgreSQL, notamment pour éviter les incohérences dans la gestion des réservations et des disponibilités</li>
-            </ul>
+            <p>Les objectifs du projet consistaient à concevoir une plateforme ergonomique permettant aux utilisateurs de consulter facilement les vols disponibles et d'effectuer leurs réservations. Il fallait également mettre en place une architecture fiable avec une séparation claire entre le front-end et le back-end. Enfin, le but était de gérer l'ensemble du cycle utilisateur : création de compte, authentification, recherche de vols, sélection et validation de la réservation.</p>
           </div>
 
           <div class="article-section fade-in">
             <h2 class="article-section-title">Contexte</h2>
-            <p>Projet réalisé dans un cadre académique avec un enseignant pour le suivi et une échéance fixe. Nous devions démontrer la maîtrise d'un stack technique complet : Spring Boot, React, API REST, gestion d'une base relationnelle et intégration de toutes les couches.</p>
+            <p>Le projet était réalisé en binôme, dans un cadre académique, avec un enseignant pour nous suivre et un délai fixe pour la remise du projet. Nous devions démontrer la maîtrise de compétences que nous avons préalablement eu en cours à savoir <strong>Spring Boot</strong>, <strong>React</strong>, <strong>API REST</strong>, gestion d'une base relationnelle et intégration de toutes les couches.</p>
           </div>
 
           <div class="article-section fade-in">
             <h2 class="article-section-title">Enjeux</h2>
-            <ul>
-              <li>Concevoir un modèle de données cohérent, capable de gérer un volume potentiellement important d'informations liées aux vols, aux utilisateurs et aux réservations, sans risque d'incohérence</li>
-              <li>La mise en place d'une API REST fiable et sécurisée, garantissant des échanges fluides et robustes entre le front-end React et le back-end Spring Boot</li>
-              <li>Offrir une expérience utilisateur simple, intuitive et agréable, afin de permettre à chacun de rechercher un vol, de consulter les informations essentielles et de finaliser une réservation sans friction</li>
-            </ul>
+            <p>Les enjeux du projet étaient multiples. D'abord je devais réussir à concevoir un modèle de données cohérent, capable de gérer un volume potentiellement important d'informations liées aux vols, aux utilisateurs et aux réservations, sans risque d'incohérence. Un autre enjeu majeur était la mise en place d'une <strong>API REST</strong> fiable et sécurisée, garantissant des échanges robustes entre le front-end et le back-end. Enfin, un enjeu important était de garantir l'intégrité et la cohérence des données stockées dans la base de données, pour éviter les incohérences dans la gestion des réservations et des disponibilités.</p>
           </div>
 
           <div class="article-section fade-in">
             <h2 class="article-section-title">Risques</h2>
-            <ul>
-              <li>Pour le projet : difficultés d'intégration entre les différentes couches, incohérences dans le modèle de données, retards cumulés en cas de mauvaise organisation</li>
-              <li>Pour notre binôme : nécessité de répartir les tâches efficacement, risque de surcharge si un membre avance moins vite, gestion du temps imposée par l'école</li>
-            </ul>
+            <p>Techniquement le risque était lié aux éventuelles difficultés d'intégration entre les différentes couches ou incohérences dans le modèle de données.</p>
+            <p>Humainement, les risques concernaient principalement la coordination du travail en binôme. Une mauvaise organisation pouvait entraîner un déséquilibre dans la charge de travail et impacter l'avancement du projet.</p>
           </div>
 
           <div class="article-section fade-in">
             <h2 class="article-section-title">Étapes du projet</h2>
-            <div style="display:flex; flex-direction:column; gap:16px;">
-              <div style="display:flex; gap:16px;">
-                <div style="width:32px; height:32px; background:#8B5CF6; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">1</div>
-                <div><h4 style="color:var(--text); margin-bottom:6px;">Spécification fonctionnelle</h4><p style="font-size:0.9rem;">Nous avons commencé par une spécification fonctionnelle, listant les pages nécessaires, les fonctionnalités prioritaires, et les interactions entre les utilisateurs et le système. Une première version du schéma de base de données a été conçue pour représenter les vols, les compagnies, les utilisateurs, les réservations et les relations entre ces entités.</p></div>
-              </div>
-              <div style="display:flex; gap:16px;">
-                <div style="width:32px; height:32px; background:#8B5CF6; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">2</div>
-                <div><h4 style="color:var(--text); margin-bottom:6px;">Développement backend (Spring Boot)</h4><p style="font-size:0.9rem;">Une fois la structure validée, nous avons développé le backend en Java Spring Boot, avec mise en place des entités, des endpoints REST, de la gestion de la sécurité, et des opérations CRUD.</p></div>
-              </div>
-              <div style="display:flex; gap:16px;">
-                <div style="width:32px; height:32px; background:#8B5CF6; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">3</div>
-                <div><h4 style="color:var(--text); margin-bottom:6px;">Développement frontend (React)</h4><p style="font-size:0.9rem;">En parallèle, nous construisions l'interface frontend en React, tout en assurant le lien avec l'API via des appels HTTP.</p></div>
-              </div>
-              <div style="display:flex; gap:16px;">
-                <div style="width:32px; height:32px; background:#8B5CF6; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem; flex-shrink:0;">4</div>
-                <div><h4 style="color:var(--text); margin-bottom:6px;">Intégration et tests</h4><p style="font-size:0.9rem;">Nous avons ensuite procédé à l'intégration complète du système : tests d'affichage de vols réels depuis la base PostgreSQL, création de comptes et réservations, vérification de la cohérence des données. Enfin, une phase de tests et de validation a permis de vérifier la sécurité, les règles métiers (impossibilité de réserver deux fois la même place, cohérence des dates…), et la bonne communication entre les différentes couches. La documentation a été rédigée pour présenter l'architecture, le modèle de données, les fonctionnalités et les choix techniques.</p></div>
-              </div>
-            </div>
+            <p>Tout d'abord j'ai participé à la phase de spécification fonctionnelle, au cours de laquelle il fallait structurer les différentes fonctionnalités de l'application. De mon coté j'ai défini les pages nécessaires (recherche de vols, affichage des résultats, réservation, gestion des comptes...), ainsi que les interactions entre les utilisateurs et le système. Cela m'a permis de poser une première base claire du fonctionnement global de l'application.</p>
+            <p>Ensuite, j'ai conçu le modèle de données en définissant les principales entités du système, telles que les vols, les compagnies aériennes, les utilisateurs et les réservations. J'ai aussi défini les relations entre ces entités (clés primaires, clés étrangères, cardinalités) afin d'assurer la cohérence des données. Par la suite, j'ai implémenté le modèle dans une base de données sous <strong>PostgreSQL</strong>.</p>
+            <p>Une fois le modèle validé, j'ai développé le backend en utilisant <strong>Spring Boot</strong> en respectant une architecture de type <strong>MVC</strong>. J'ai mis en place les différentes entités Java en les reliant à la base de données via un mapping objet-relationnel (<strong>JPA/Hibernate</strong>). J'ai ensuite créé des endpoints REST permettant d'effectuer des opérations <strong>CRUD</strong> (création, lecture, mise à jour, suppression) sur les différentes ressources. J'ai également implémenté dans les services des règles permettant de contrôler la logique de réservation comme empêcher la réservation d'une place déjà occupée.</p>
+            <p>J'ai finalisé le backend de mon côté et ma binôme s'est chargée du frontend. J'ai ensuite participé à l'intégration du système pour assurer la communication entre le front et le back via des appels HTTP (<strong>API REST</strong>), en récupérant et envoyant les données au format <strong>JSON</strong>.</p>
+            <p>Enfin, j'ai testé le bon fonctionnement des fonctionnalités principales, notamment l'affichage des vols depuis la base de données, la création de comptes utilisateurs et le processus de réservation. J'ai aussi vérifié la cohérence des données à chaque étape, et testé quelques règles par exemple l'impossibilité de réserver deux fois la même place ou la cohérence des dates, pour voir si toutes les conditions étaient bien implémentées.</p>
           </div>
 
           <div class="article-section fade-in">
             <h2 class="article-section-title">Acteurs</h2>
-            <ul>
-              <li><strong>Mon binôme et moi :</strong> nous avons travaillé ensemble pour répartir efficacement les tâches entre frontend, backend et gestion de la base, tout en maintenant une communication fluide</li>
-              <li><strong>L'encadrant :</strong> nous guidait lors des points hebdomadaires, validait nos choix techniques et nous aidait à rediriger nos efforts lorsque certaines pistes étaient trop complexes ou trop longues à implémenter</li>
-            </ul>
+            <p>Les principaux acteurs du projet étaient ma binôme, notre enseignant et moi-même. Nous avons travaillé ensemble pour répartir efficacement les tâches entre frontend, backend et gestion de la base de données, tout en maintenant une communication fluide.</p>
+            <p>L'encadrant nous guidait et validait nos choix techniques.</p>
           </div>
 
           <div class="article-section fade-in">
@@ -216,28 +185,23 @@
             </div>
 
             <div class="highlight-box success">
-              <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin-bottom:10px;">Pour le projet</h4>
-              <p>Pour le projet, nous avons livré une application fonctionnelle, stable et cohérente, répondant aux principales attentes : consultation de vols, création de comptes, réservations et gestion des données. Ce projet a permis de valider l'ensemble des compétences attendues dans notre cursus.</p>
-            </div>
-            <div class="highlight-box" style="margin-top:16px;">
-              <h4 style="font-family:var(--font-heading); font-weight:700; color:var(--text); margin-bottom:10px;">Pour moi</h4>
-              <p>Pour moi, cette réalisation a été l'occasion de renforcer mes compétences en Spring Boot, React, PostgreSQL, API REST, modélisation de données, ainsi qu'en gestion de projet en binôme. J'ai également développé une bonne compréhension des enjeux liés à la cohérence des données et au fonctionnement des applications complètes modernes.</p>
+              <p>Cette réalisation a été l'occasion pour moi de renforcer et de valider les compétences attendues notamment <a href="../competences/java.html"><strong>JAVA Spring Boot</strong></a>, la gestion d'<strong>API REST</strong> et modélisation de données.</p>
+              <p>J'ai aussi renforcé ma capacité à collaborer et travailler avec un binôme, en ayant une bonne organisation et une bonne planification dans nos tâches.</p>
             </div>
           </div>
 
           <div class="article-section fade-in">
             <h2 class="article-section-title">Lendemains du projet</h2>
             <ul>
-              <li><strong>Futur immédiat :</strong> utiliser ce projet comme référence pour structurer d'autres applications en architecture front / back séparée. Intégrer les bonnes pratiques acquises (authentification, API, gestion d'erreurs).</li>
-              <li><strong>À moyen terme :</strong> améliorer mes compétences sur des sujets avancés comme l'optimisation SQL, la montée en charge, les systèmes distribués, ou encore le déploiement de plateformes complètes (CI/CD, conteneurisation…)</li>
-              <li><strong>Aujourd'hui :</strong> ce projet constitue une base solide pour mes projets actuels et futurs. Il illustre ma capacité à concevoir une application web complète, à interconnecter plusieurs technologies modernes et à gérer efficacement un projet de développement logiciel.</li>
+              <li><strong>À court terme,</strong> je veux continuer à progresser sur les frameworks que j'ai déjà utilisés, notamment <strong>Spring Boot</strong> et <strong>React</strong>, et aller plus loin dans la conception d'API.</li>
+              <li><strong>À moyen terme,</strong> je veux être capable de travailler sur des architectures plus complexes, et améliorer ma manière de concevoir des applications.</li>
+              <li><strong>Aujourd'hui,</strong> Ce projet constitue pour moi une base solide pour mes projets actuels et futurs. Il illustre ma capacité à concevoir une application web complète, à interconnecter plusieurs technologies modernes et à gérer efficacement un projet de développement logiciel.</li>
             </ul>
           </div>
 
           <div class="article-section fade-in">
             <h2 class="article-section-title">Mon regard critique</h2>
-            <p>Ce projet a été particulièrement formateur. Il m'a permis de prendre du recul sur l'importance de la structuration des données et de l'architecture logique entre les couches système. Ma valeur ajoutée a résidé dans ma capacité à structurer le modèle de données, à assurer l'intégration entre backend et frontend, et à maintenir une organisation stable pour garantir l'avancement du projet.</p>
-            <p>Les principaux enseignements que j'en retiens sont : l'importance d'une modélisation claire, la nécessité de tester en continu, et le rôle fondamental de la communication au sein d'un binôme pour garantir une cohérence globale.</p>
+            <p>Ce projet a été particulièrement formateur pour moi. Les principaux enseignements que j'en retiens sont : l'importance d'une modélisation claire, la nécessité de tester en continu, et le rôle fondamental de la communication au sein d'un binôme pour garantir une cohérence globale dans notre travail. Ma valeur ajoutée a résidé dans ma capacité à structurer le modèle de données, à assurer l'intégration entre backend et frontend, et à maintenir une organisation stable pour garantir l'avancement du projet.</p>
           </div>
         </div>
 
@@ -253,7 +217,7 @@
             </div>
           </div>
           <div class="sidebar-card fade-in fade-in-delay-1" style="margin-top:20px;">
-            <a href="application-mobile.html" class="btn btn-outline" style="width:100%; justify-content:center; margin-bottom:10px;">← Application d'envoi de colis</a>
+            <a href="application-mobile.html" class="btn btn-outline" style="width:100%; justify-content:center; margin-bottom:10px;">← SendPack</a>
             <a href="../realisations.html" class="btn btn-primary" style="width:100%; justify-content:center;">Toutes les réalisations ↑</a>
           </div>
         </div>
@@ -266,7 +230,7 @@
   <div class="container">
     <div class="footer-inner">
       <div class="footer-logo">Lydia <span>ALIK</span></div>
-      <p class="footer-text">Experte en ingénierie logicielle — Portfolio professionnel</p>
+      <p class="footer-text">Portfolio</p>
       <div class="footer-links">
         <a href="../index.html">Accueil</a><a href="../presentation.html">Présentation</a>
         <a href="../competences.html">Compétences</a><a href="../realisations.html">Réalisations</a>
